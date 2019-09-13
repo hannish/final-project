@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1568398860">
-  <project timestamp="1568398860">
+<coverage generated="1568399043">
+  <project timestamp="1568399043">
     <file name="/var/lib/jenkins/workspace/swift_feature_integration_testing/application/controllers/Welcome.php">
       <class name="Welcome" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
