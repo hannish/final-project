@@ -29,13 +29,13 @@ class Welcome extends CI_Controller {
 	}
 	public function book(){
 		$form_data = $this->input->post();
-		$data['servername'] = $this->input->post("servername");
-		$data['catagory'] = $this->input->post("catagory");
-		$data['serversize'] = $this->input->post("serversize");
-		$uptime = date('Y-m-d H:i:s',strtotime($this->input->post("uptime")));
-		$data['uptime'] = $uptime;
-		$this->load->model('Catalog');
-		$this->Catalog->save($data);
+		$data['email'] = $this->input->post("email");
+		$data['name'] = $this->input->post("username");
+		$data['passengers'] = $this->input->post("passengers");
+		$departure = date('Y-m-d H:i:s',strtotime($this->input->post("departure")));
+		$data['departure'] = $departure;
+		$this->load->model('Booking');
+		$this->Booking->save($data);
 		$this->load->view('welcome_result', $data);
 	}
 }
