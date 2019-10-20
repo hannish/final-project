@@ -29,8 +29,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<td><?php echo $servername ?></td>
 			</tr>
 			<tr>
-				<td><em>category</em></td>
-				<td><?php echo $category ?></td>
+				<td><em>catagory</em></td>
+				<td><?php echo $catagory ?></td>
 			</tr>
 			<tr>
                                 <td><em>size of server</em></td>

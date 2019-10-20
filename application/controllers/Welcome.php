@@ -30,7 +30,7 @@ class Welcome extends CI_Controller {
 	public function book(){
 		$form_data = $this->input->post();
 		$data['servername'] = $this->input->post("servername");
-		$data['category'] = $this->input->post("category");
+		$data['catagory'] = $this->input->post("catagory");
 		$data['serversize'] = $this->input->post("serversize");
 		$uptime = date('Y-m-d H:i:s',strtotime($this->input->post("uptime")));
 		$data['uptime'] = $uptime;
