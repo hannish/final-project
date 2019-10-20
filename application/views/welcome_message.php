@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Hello Swift</title>
+	<title>Catalog Service</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/styles.css">
@@ -20,29 +20,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <div class="container">
 	<div class="row">
-		<p>Please fill the following form to book a  ticket</p>
+		<p>Please fill the following form to enter server details</p>
 	</div>
 	<div class="row">
 	<form action="/welcome/book" method="POST">
 	  <div class="form-group">
-		<label for="exampleInputEmail1">Email address</label>
-		<input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+		<label for="exampleInputName">servername</label>
+		<input type="text" name="servername" class="form-control" id="exampleInputName" placeholder="Enter Server Name">
 	  </div>
 	  <div class="form-group">
-		<label for="passengers">Number of passengers</label>
-		<select class="form-control" name="passengers" id="passengers">
-		  <option>1</option>
-		  <option>2</option>
-		  <option>3</option>
-		  <option>4</option>
-		  <option>5</option>
-		  <option>6</option>
-		  <option>7</option>	
-		</select>
-	  </div>
+                <label for="category">category of the server</label>
+                <select class="form-control" name="category" id="category">
+                  <option>Application</option>
+                  <option>Database</option>
+                  <option>Firewall</option>
+                  <option>Middleware</option>
+                </select>
+          </div>
 	  <div class="form-group">
-	  	<label for="departure">Departure date</label>
-	  	<input type="text" id="datepicker" name="departure">
+                <label for="serversize">size of the server</label>
+                <select class="form-control" name="serversize" id="server size">
+                  <option>m1.large</option>
+                  <option>m1.xlarge</option>
+                  <option>t1.medium</option>
+                  <option>t1.small</option>
+                </select>
+          </div>
+	  <div class="form-group">
+	  	<label for="uptime">uptime date</label>
+	  	<input type="text" id="datepicker" name="uptime">
 	  </div>
 	  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
