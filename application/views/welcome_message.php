@@ -40,10 +40,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  <div class="form-group">
                 <label for="serversize">size of the server</label>
                 <select class="form-control" name="serversize" id="server size">
-                  <option>m1.large</option>
-                  <option>m1.xlarge</option>
-                  <option>t1.medium</option>
-                  <option>t1.small</option>
+                  <option>m1large</option>
+                  <option>m1xlarge</option>
+                  <option>t1medium</option>
+                  <option>t1small</option>
                 </select>
           </div>
 	  <div class="form-group">
