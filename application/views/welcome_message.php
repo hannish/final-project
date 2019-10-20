@@ -29,8 +29,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<input type="text" name="servername" class="form-control" id="exampleInputName" placeholder="Enter Server Name">
 	  </div>
 	  <div class="form-group">
-                <label for="category">category of the server</label>
-                <select class="form-control" name="category" id="category">
+                <label for="catagory">category of the server</label>
+                <select class="form-control" name="catagory" id="catagory">
                   <option>Application</option>
                   <option>Database</option>
                   <option>Firewall</option>
