@@ -44,6 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <option>XL</option>
                   <option>M</option>
                   <option>S</option>
+		  <option>XXL</option>
                 </select>
           </div>
 	  <div class="form-group">
