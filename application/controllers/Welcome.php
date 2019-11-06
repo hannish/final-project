@@ -40,8 +40,8 @@ class Welcome extends CI_Controller {
 	}
       public function alldata(){
                 $this->load->model('getdata');
-                $this->getdata->save($data);
-                $this->load->view('welcome_data', $data);
+                $this->data['welcome'] = $this->getdata->getposts();
+                $this->load->view('welcome_data', $this->data);
       }
      	
 }
