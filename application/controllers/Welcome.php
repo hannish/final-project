@@ -48,4 +48,5 @@ class Welcome extends CI_Controller {
                 $this->load->model('Catalog');
                 $this->Catalog->save($data);
                 $this->load->view('welcome_result', $data);
+	}
 }
