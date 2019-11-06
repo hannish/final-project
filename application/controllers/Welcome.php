@@ -38,15 +38,4 @@ class Welcome extends CI_Controller {
 		$this->Catalog->save($data);
 		$this->load->view('welcome_result', $data);
 	}
-       public function data(){
-		$form_data = $this->input->get();
-                $data['servername'] = $this->input->get("servername");
-                $data['catagory'] = $this->input->get("catagory");
-                $data['serversize'] = $this->input->get("serversize");
-                $uptime = date('Y-m-d H:i:s',strtotime($this->input->get("uptime")));
-                $data['uptime'] = $uptime;
-                $this->load->model('Catalog');
-                $this->Catalog->save($data);
-                $this->load->view('welcome_result', $data);
-	}
 }
