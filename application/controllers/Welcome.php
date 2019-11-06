@@ -21,7 +21,6 @@ class Welcome extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
-		$this->load->model('getdata');
 	}
 	public function index()
 	{
@@ -39,12 +38,5 @@ class Welcome extends CI_Controller {
 		$this->Catalog->save($data);
 		$this->load->view('welcome_result', $data);
 	}
-	public function alldata()
-        {
-
-                $this->data['Welcome'] = $this->getdata->getPosts();
-                $this->load->view('welcome_data', $this->data);
-
-        }
      	
 }
