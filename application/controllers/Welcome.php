@@ -38,10 +38,5 @@ class Welcome extends CI_Controller {
 		$this->Catalog->save($data);
 		$this->load->view('welcome_result', $data);
 	}
-      public function alldata(){
-                $this->load->model('getdata');
-                $this->getdata->save($data);
-                $this->load->view('welcome_data', $data);
-      }
      	
 }
