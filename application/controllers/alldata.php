@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class post extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,23 +20,14 @@ class Welcome extends CI_Controller {
 	 */
 	public function __construct(){
 		parent::__construct();
-		$this->load->helper('url');
+		$this->load->model('getdata');
 	}
 	public function index()
 	{
 
-		$this->load->view('welcome_message');
-	}
-	public function book(){
-		$form_data = $this->input->post();
-		$data['servername'] = $this->input->post("servername");
-		$data['catagory'] = $this->input->post("catagory");
-		$data['serversize'] = $this->input->post("serversize");
-		$uptime = date('Y-m-d H:i:s',strtotime($this->input->post("uptime")));
-		$data['uptime'] = $uptime;
-		$this->load->model('Catalog');
-		$this->Catalog->save($data);
-		$this->load->view('welcome_result', $data);
+		$this->data['posts'] = $this->getdata->getPosts();
+		$this->load->view('welcome_data', $this->data);
+		
 	}
      	
 }
