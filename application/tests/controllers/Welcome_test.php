@@ -17,7 +17,7 @@ class Welcome_test extends TestCase
     }
   public function test_1_index()
     {
-        $this->request('GET', '/post');
+        $this->request('GET', '/welcome/alldata');
         $this->assertResponseCode(200);
     }
 }
