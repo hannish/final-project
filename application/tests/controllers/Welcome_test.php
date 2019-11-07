@@ -17,9 +17,8 @@ class Welcome_test extends TestCase
     }
   public function test_index_1()
    {
-        $response = $this->request('GET', '/welcome/dispdata');
-	$status_code = $response->getStatusCode();
-	$this->assertEquals(200, $status_code);
+        $this->request('GET', '/welcome/dispdata');
+	$this->assertRedirect('/welcome/dispdata');
     }	
  
 }
