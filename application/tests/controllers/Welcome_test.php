@@ -20,10 +20,5 @@ class Welcome_test extends TestCase
         $this->request('GET', '/Hello/dispdata');
         $this->assertResponseCode(200);
     }	
-  public function test_index_2()
-   {
-        $this->request('GET', '/Hello/dispdata');
-	$this->assertRedirect('/Hello/dispdata');
-    }	
  
 }
