@@ -1,5 +1,5 @@
 <?php
-class Welcome extends CI_Controller 
+class Hello extends CI_Controller 
 {
 	public function __construct()
 	{
@@ -19,7 +19,7 @@ class Welcome extends CI_Controller
 		$s=$this->input->post('serversize');
 		$u=$this->input->post('uptime');
 		$this->Hello_Model->saverecords($n,$e,$s,$u);		
-		redirect("Welcome/dispdata");  
+		redirect("Hello/dispdata");  
 		}
 	}
 	
