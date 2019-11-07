@@ -17,13 +17,13 @@ class Welcome_test extends TestCase
     }
   public function test_index_1()
     {
-        $this->request('GET', '/welcome/Hello/dispdata');
+        $this->request('GET', '/Hello/dispdata');
         $this->assertResponseCode(200);
     }	
   public function test_index_2()
    {
-        $this->request('GET', '/welcome/Hello/dispdata');
-	$this->assertRedirect('/welcome/Hello/dispdata');
+        $this->request('GET', '/Hello/dispdata');
+	$this->assertRedirect('/Hello/dispdata');
     }	
  
 }
