@@ -28,5 +28,12 @@ class Hello extends CI_Controller
 	$result['data']=$this->Hello_Model->displayrecords();
 	$this->load->view('display_records',$result);
 	}
+
+	public function deletedata()
+	{
+	$id=$this->input->get('id');
+	$this->Hello_Model->deleterecords($id);
+	redirect("Hello/dispdata");
+	}
 }
 ?>
