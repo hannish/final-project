@@ -24,6 +24,7 @@
   echo "<td>".$row->serversize."</td>";
   echo "<td>".$row->uptime."</td>";
   echo "<td><a href='deletedata?id=".$row->item_id."'>Delete</a></td>";
+  echo "<td><a href='updatedata?id=".$row->item_id."'>Update</a></td>";
   echo "</tr>";
   $i++;
   }

@@ -17,5 +17,10 @@ class Hello_Model extends CI_Model
 	{
 	$this->db->query("delete  from catalog_new_v1 where item_id='".$id."'");
 	}
+	
+	function updaterecords($servername,$catagory,$serversize,$uptime,$id)
+	{
+	$query=$this->db->query("update catalog_new_v1 SET servername='$servername',catagory='$catagory',serversize='$serversize',uptime=$uptime where item_id='".$id."'");
+	}
 }
 ?>

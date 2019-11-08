@@ -35,5 +35,22 @@ class Hello extends CI_Controller
 	$this->Hello_Model->deleterecords($id);
 	redirect("Hello/dispdata");
 	}
+
+	public function updatedata()
+	{
+	$id=$this->input->get('id');
+	$result['data']=$this->Hello_Model->displayrecordsById($id);
+	$this->load->view('update_records',$result);	
+	
+		if($this->input->post('update'))
+		{
+		$n=$this->input->post('servername');
+                $e=$this->input->post('catagory');
+                $s=$this->input->post('serversize');
+                $u=$this->input->post('uptime');
+                $this->Hello_Model->saverecords($n,$e,$s,$u,$id);
+		redirect("Hello/dispdata");
+		}
+	}
 }
 ?>
