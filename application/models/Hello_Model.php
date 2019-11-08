@@ -3,7 +3,7 @@ class Hello_Model extends CI_Model
 {
 	function saverecords($servername,$catagory,$serversize,$uptime)
 	{
-	$query="insert into users values('','$ervername','$catagory','$serversize','$uptime')";
+	$query="insert into catalog_new_v1 values('','$ervername','$catagory','$serversize','$uptime')";
 	$this->db->query($query);
 	}
 	
