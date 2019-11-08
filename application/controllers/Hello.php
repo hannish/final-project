@@ -52,5 +52,29 @@ class Hello extends CI_Controller
 		redirect("Hello/dispdata");
 		}
 	}
+	
+	public function exportCSV(){
+        // get data
+        $myData = $this->Hello_Model->displayrecords();
+ 
+        // file name
+        $filename = 'mydata_'.date('Ymd').'.csv';
+        header("Content-Description: File Transfer");
+        header("Content-Disposition: attachment; filename=$filename");
+        header("Content-Type: application/csv; ");
+ 
+        // file creation
+        $file = fopen('php://output', 'w');
+ 
+        $header = array("Column 1","Column 2","Column 3","Column 4","Column 4");
+        fputcsv($file, $header);
+ 
+        foreach ($myData as $line){
+            fputcsv($file,array($line->field1,$line->field2,$line->field3,$line->field4,$line->field5));
+        }
+ 
+        fclose($file);
+        exit;
+    }
 }
 ?>
