@@ -9,13 +9,13 @@ class Hello_Model extends CI_Model
 	
 	function displayrecords()
 	{
-	$query=$this->db->query("select * from catalog_new");
+	$query=$this->db->query("select * from catalog_new_v1");
 	return $query->result();
 	}
 
 	function deleterecords($id)
 	{
-	$this->db->query("delete  from catalog_new where item_id='".$id."'");
+	$this->db->query("delete  from catalog_new_v1 where item_id='".$id."'");
 	}
 }
 ?>
