@@ -52,5 +52,6 @@ class Hello extends CI_Controller
 		redirect("Hello/dispdata");
 		}
 	}
+	
 }
 ?>
