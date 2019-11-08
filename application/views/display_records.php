@@ -5,6 +5,10 @@
 </head>
 
 <body>
+   <!-- Export Data -->
+   <a href='<?= base_url() ?>hello/exportCSV'>Export</a><br><br>
+
+   <!-- User Records -->
 <table width="600" border="1" cellspacing="5" cellpadding="5">
   <tr style="background:#CCC">
     <th>Sr No</th>
@@ -29,6 +33,34 @@
   $i++;
   }
    ?>
+</table>
+
+<table border='1' style='border-collapse: collapse;'>
+     <thead>
+      <tr>
+       <th>Sr No</th>
+       <th>servername/th>
+       <th>catagory</th>
+       <th>serversize</th>
+       <th>uptime</th>
+      </tr>
+     </thead>
+     <tbody>
+     <?php
+     $i=1;	
+     foreach($mydata as $key=>$val)
+      {
+       echo "<tr>";
+       echo "<td>".$val['item_id']."</td>";
+       echo "<td>".$val['servername']."</td>";
+       echo "<td>".$val['catagory']."</td>";
+       echo "<td>".$val['serversize']."</td>";
+       echo "<td>".$val['uptime']."</td>";
+       echo "</tr>";
+      $i++;
+      }
+      ?>
+     </tbody>
 </table>
 
 </body>
