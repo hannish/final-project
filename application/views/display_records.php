@@ -5,9 +5,6 @@
 </head>
 
 <body>
-   <!-- Export Data --> 
-   <a href='<?= base_url() ?>/Hello/ExportCSV'>Export</a>
-   <!-- User Records --> 
 <table width="600" border="1" cellspacing="5" cellpadding="5">
   <tr style="background:#CCC">
     <th>Sr No</th>
