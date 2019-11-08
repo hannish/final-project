@@ -62,19 +62,18 @@ class Hello extends CI_Controller
         header("Content-Description: File Transfer");
         header("Content-Disposition: attachment; filename=$filename");
         header("Content-Type: application/csv; ");
- 
-        // file creation
+	
+	// file creation 
         $file = fopen('php://output', 'w');
  
-        $header = array("Column 1","Column 2","Column 3","Column 4","Column 4");
+        $header = array("item_id","servername","catagory","serversize","uptime"); 
         fputcsv($file, $header);
+        foreach ($mydata as $key=>$line){ 
+        fputcsv($file,$line); 
+   }
+   fclose($file); 
+   exit; 
  
-        foreach ($myData as $line){
-            fputcsv($file,array($line->field1,$line->field2,$line->field3,$line->field4,$line->field5));
-        }
- 
-        fclose($file);
-        exit;
     }
 }
 ?>
