@@ -1,0 +1,47 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Ensure that mariaDB is installed
+    yum: name='{{ item }}' state=present
+    with_items:
+        - mariadb-server
+        - MySQL-python
+  - name: Ensure that mariaDB started and enabled
+    service: name=mariadb state=started enabled=yes
+  - name: Set root pwd for MySQL
+    mysql_user:
+        name: root
+        password: admin
+        state: present
+  - name: upload .my.cnf file to save the credentials
+    copy:
+        src: my.cnf
+        dest: /root/.my.cnf
+        remote_src: no
+        owner: root
+        mode: 0600      
+  - name: Remove anonymous account
+    mysql_user:
+        name: ''
+        host_all: yes
+        state: absent
+  - name: create application database
+    mysql_db:
+        name: ci_database
+        state: present
+  - name: create an application user
+    mysql_user:
+        name: ci_user
+        password: cipassword
+        host: '%'
+        priv: ci_database.*:ALL
+        state: present
+  - name: upload catalog_new.sql
+    copy:
+        src: catalog_new.sql
+        dest: /tmp/catalog_new.sql
+  - name: Import catalog_new.sql
+    mysql_db:
+        state: import
+        name: ci_database
+        target: /tmp/catalog_new.sql

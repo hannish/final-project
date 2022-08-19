@@ -1,0 +1,5 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Ensure that GIT is installed
+    yum: name=git state=present

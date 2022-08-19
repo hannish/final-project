@@ -1,0 +1,2002 @@
+Last login: Tue Sep 10 21:52:46 on ttys000
+Ahameds-MacBook-Air:~ hannish$ cd CCZC-513/
+Ahameds-MacBook-Air:CCZC-513 hannish$ cd Vagrant/
+Ahameds-MacBook-Air:Vagrant hannish$ ls
+Vagrantfile			bootstrap.sh			foo				ngrok				ngrok-stable-linux-amd64.zip	precise64.box
+Ahameds-MacBook-Air:Vagrant hannish$ mv Vagrantfile Vagrantfile.org
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ cp ../../Desktop/BITS_Dessertation/BITS-Final-Project/
+.DS_Store              Prebuilt Environments/ Presentation.pdf       Resource/              
+Ahameds-MacBook-Air:Vagrant hannish$ cp ../../Desktop/BITS_Dessertation/BITS-Final-Project/Pre
+Prebuilt Environments/ Presentation.pdf       
+Ahameds-MacBook-Air:Vagrant hannish$ cp ../../Desktop/BITS_Dessertation/BITS-Final-Project/Pre
+Prebuilt Environments/ Presentation.pdf       
+Ahameds-MacBook-Air:Vagrant hannish$ cp ../../Desktop/BITS_Dessertation/BITS-Final-Project/Prebuilt\ Environments/Vagrantfile .
+Ahameds-MacBook-Air:Vagrant hannish$ ls -lrt
+total 699232
+-rwxr-xr-x  1 hannish  staff   16117632 Jul 16  2017 ngrok
+-rw-r--r--@ 1 hannish  staff  320671744 Feb 18  2018 precise64.box
+-rw-r--r--  1 hannish  staff          0 Feb 18  2018 foo
+-rw-r--r--  1 hannish  staff        138 Feb 18  2018 bootstrap.sh
+-rw-r--r--  1 hannish  staff       3136 Feb 18  2018 Vagrantfile.org
+-rw-r--r--@ 1 hannish  staff    5363700 Feb 18  2018 ngrok-stable-linux-amd64.zip
+-rwxr-xr-x@ 1 hannish  staff       4115 Sep 10 22:03 Vagrantfile
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ vagrant init
+`Vagrantfile` already exists in this directory. Remove it before
+running `vagrant init`.
+Ahameds-MacBook-Air:Vagrant hannish$ cd 
+Ahameds-MacBook-Air:~ hannish$ vagrant init
+`Vagrantfile` already exists in this directory. Remove it before
+running `vagrant init`.
+Ahameds-MacBook-Air:~ hannish$ ls -la
+total 208
+drwxr-xr-x+  47 hannish  staff   1504 Sep 10 21:55 .
+drwxr-xr-x    7 root     admin    224 Sep  3 23:29 ..
+-r--------    1 hannish  staff      7 Dec  6  2017 .CFUserTextEncoding
+-rw-r--r--@   1 hannish  staff  14340 Sep 10 22:00 .DS_Store
+drwx------    2 hannish  staff     64 Sep  9 02:20 .Trash
+-rw-------    1 hannish  staff    220 Mar  3  2019 .Xauthority
+drwxr-xr-x    3 hannish  staff     96 Apr 27 17:27 .anaconda
+drwxr-xr-x   19 hannish  staff    608 May  5  2018 .android
+-rw-------    1 hannish  staff  10616 Sep 10 21:52 .bash_history
+-rw-r--r--    1 hannish  staff   1982 Sep 10 21:52 .bash_profile
+drwx------   14 hannish  staff    448 Sep 10 22:03 .bash_sessions
+-rw-r--r--    1 hannish  staff     48 Feb 11  2019 .bashrc
+drwxr-xr-x    3 hannish  staff     96 Feb  2  2019 .cache
+drwxr-xr-x    5 hannish  staff    160 Apr 27 17:04 .conda
+-rw-r--r--    1 hannish  staff     40 Apr 27 17:34 .condarc
+drwx------    3 hannish  staff     96 Feb 18  2018 .cups
+drwx------    3 hannish  staff     96 Feb 11  2019 .emacs.d
+-rw-------    1 hannish  staff     16 Apr 25  2018 .emulator_console_auth_token
+-rw-------    1 hannish  staff   1417 Feb 16  2019 .gnuplot_history
+drwxr-xr-x    7 hannish  staff    224 Apr 19  2018 .gradle
+drwxr-xr-x    5 hannish  staff    160 Apr 27 14:00 .ipython
+drwxr-xr-x    3 hannish  staff     96 Jun  2  2018 .kodi
+drwxr-xr-x    4 hannish  staff    128 Apr 27 17:39 .matplotlib
+drwxr-xr-x    3 hannish  staff     96 Jul 17  2018 .oracle_jre_usage
+drwxr-xr-x    3 hannish  staff     96 Feb 12  2019 .perlbrew
+drwxr-xr-x   16 hannish  staff    512 Apr 27 17:34 .spyder
+drwx------    3 hannish  staff     96 Apr 15  2018 .ssh
+drwxr-xr-x    4 hannish  staff    128 Sep 10 21:55 .vagrant
+drwxr-xr-x    9 hannish  staff    288 Sep 10 22:04 .vagrant.d
+-rw-------    1 hannish  staff  37411 Sep 10 21:52 .viminfo
+-rw-r--r--    1 hannish  staff    220 Jan 30  2019 .wget-hsts
+dr-xr-xr-x    2 hannish  staff     64 Jul 12 00:05 .zoomus
+drwxr-xr-x    4 hannish  staff    128 Apr 24  2018 AndroidStudioProjects
+drwx------@   4 hannish  staff    128 Feb 11  2019 Applications
+drwxr-xr-x    3 hannish  staff     96 Feb 18  2018 CCZC-513
+drwx------+   5 hannish  staff    160 Sep 10 22:00 Desktop
+drwx------+  13 hannish  staff    416 Aug 30 19:59 Documents
+drwx------+ 141 hannish  staff   4512 Sep 10 22:00 Downloads
+drwx------@  71 hannish  staff   2272 Aug 22 22:00 Library
+drwx------+   5 hannish  staff    160 Mar 12  2019 Movies
+drwx------+   6 hannish  staff    192 Sep  8 20:16 Music
+drwx------+   4 hannish  staff    128 Aug  4 14:06 Pictures
+drwxr-xr-x+   5 hannish  staff    160 Dec  6  2017 Public
+-rw-r--r--    1 hannish  staff   3011 Sep 10 21:55 Vagrantfile
+drwx------    4 hannish  staff    128 Jan 29  2019 VirtualBox VMs
+drwxr-xr-x    3 hannish  staff     96 Feb 11  2019 perl5
+drwxr-xr-x    3 hannish  staff     96 Apr  6 15:04 pic
+Ahameds-MacBook-Air:~ hannish$ cd .vagrant
+Ahameds-MacBook-Air:.vagrant hannish$ ls
+machines	rgloader
+Ahameds-MacBook-Air:.vagrant hannish$ cd machines/
+Ahameds-MacBook-Air:machines hannish$ ls
+default
+Ahameds-MacBook-Air:machines hannish$ cd default/
+Ahameds-MacBook-Air:default hannish$ ls
+virtualbox
+Ahameds-MacBook-Air:default hannish$ cd virtualbox/
+Ahameds-MacBook-Air:virtualbox hannish$ ls
+Ahameds-MacBook-Air:virtualbox hannish$ ls -la
+total 0
+drwxr-xr-x  2 hannish  staff  64 Sep 10 21:55 .
+drwxr-xr-x  3 hannish  staff  96 Sep 10 21:55 ..
+Ahameds-MacBook-Air:virtualbox hannish$ cd ..
+Ahameds-MacBook-Air:default hannish$ cd ..
+Ahameds-MacBook-Air:machines hannish$ cd ..
+Ahameds-MacBook-Air:.vagrant hannish$ ls
+machines	rgloader
+Ahameds-MacBook-Air:.vagrant hannish$ cd rgloader/
+Ahameds-MacBook-Air:rgloader hannish$ ls
+loader.rb
+Ahameds-MacBook-Air:rgloader hannish$ 
+Ahameds-MacBook-Air:rgloader hannish$ 
+Ahameds-MacBook-Air:rgloader hannish$ cd ..
+Ahameds-MacBook-Air:.vagrant hannish$ cd ..
+Ahameds-MacBook-Air:~ hannish$ cd CCZC-513/
+Ahameds-MacBook-Air:CCZC-513 hannish$ ls
+Vagrant
+Ahameds-MacBook-Air:CCZC-513 hannish$ cd Vagrant/
+Ahameds-MacBook-Air:Vagrant hannish$ ls
+Vagrantfile			bootstrap.sh			ngrok				precise64.box
+Vagrantfile.org			foo				ngrok-stable-linux-amd64.zip
+Ahameds-MacBook-Air:Vagrant hannish$ vi Vagrantfile
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ whereis vagrant
+Ahameds-MacBook-Air:Vagrant hannish$ which vagrant
+/usr/local/bin/vagrant
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ cd ~/.vagrant.d/
+Ahameds-MacBook-Air:.vagrant.d hannish$ ls
+boxes			data			gems			insecure_private_key	rgloader		setup_version		tmp
+Ahameds-MacBook-Air:.vagrant.d hannish$ cd boxes/
+Ahameds-MacBook-Air:boxes hannish$ ls
+hashicorp-VAGRANTSLASH-precise64
+Ahameds-MacBook-Air:boxes hannish$ 
+Ahameds-MacBook-Air:boxes hannish$ 
+Ahameds-MacBook-Air:boxes hannish$ cd ..
+Ahameds-MacBook-Air:.vagrant.d hannish$ cd setup_version 
+-bash: cd: setup_version: Not a directory
+Ahameds-MacBook-Air:.vagrant.d hannish$ cat setup_version 
+1.5Ahameds-MacBook-Air:.vagrant.d hannish$ cd 
+Ahameds-MacBook-Air:~ hannish$ cd CCZC-513/Vagrant/
+Ahameds-MacBook-Air:Vagrant hannish$ ls -lrt
+total 699232
+-rwxr-xr-x  1 hannish  staff   16117632 Jul 16  2017 ngrok
+-rw-r--r--@ 1 hannish  staff  320671744 Feb 18  2018 precise64.box
+-rw-r--r--  1 hannish  staff          0 Feb 18  2018 foo
+-rw-r--r--  1 hannish  staff        138 Feb 18  2018 bootstrap.sh
+-rw-r--r--  1 hannish  staff       3136 Feb 18  2018 Vagrantfile.org
+-rw-r--r--@ 1 hannish  staff    5363700 Feb 18  2018 ngrok-stable-linux-amd64.zip
+-rwxr-xr-x@ 1 hannish  staff       4115 Sep 10 22:03 Vagrantfile
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ mv Vagrantfile.org Initial_Vagrantfile.org
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ vagrant init
+`Vagrantfile` already exists in this directory. Remove it before
+running `vagrant init`.
+Ahameds-MacBook-Air:Vagrant hannish$ mv Initial_Vagrantfile.org ~/Desktop/BITS_Dessertation/
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ ls -lrt
+total 699224
+-rwxr-xr-x  1 hannish  staff   16117632 Jul 16  2017 ngrok
+-rw-r--r--@ 1 hannish  staff  320671744 Feb 18  2018 precise64.box
+-rw-r--r--  1 hannish  staff          0 Feb 18  2018 foo
+-rw-r--r--  1 hannish  staff        138 Feb 18  2018 bootstrap.sh
+-rw-r--r--@ 1 hannish  staff    5363700 Feb 18  2018 ngrok-stable-linux-amd64.zip
+-rwxr-xr-x@ 1 hannish  staff       4115 Sep 10 22:03 Vagrantfile
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ ls -la
+total 699224
+drwxr-xr-x  9 hannish  staff        288 Sep 10 22:11 .
+drwxr-xr-x  3 hannish  staff         96 Feb 18  2018 ..
+drwxr-xr-x  4 hannish  staff        128 Sep 10 22:04 .vagrant
+-rwxr-xr-x@ 1 hannish  staff       4115 Sep 10 22:03 Vagrantfile
+-rw-r--r--  1 hannish  staff        138 Feb 18  2018 bootstrap.sh
+-rw-r--r--  1 hannish  staff          0 Feb 18  2018 foo
+-rwxr-xr-x  1 hannish  staff   16117632 Jul 16  2017 ngrok
+-rw-r--r--@ 1 hannish  staff    5363700 Feb 18  2018 ngrok-stable-linux-amd64.zip
+-rw-r--r--@ 1 hannish  staff  320671744 Feb 18  2018 precise64.box
+Ahameds-MacBook-Air:Vagrant hannish$ cd .vagrant/
+Ahameds-MacBook-Air:.vagrant hannish$ ls
+machines	rgloader
+Ahameds-MacBook-Air:.vagrant hannish$ cd machines/
+Ahameds-MacBook-Air:machines hannish$ ls
+default
+Ahameds-MacBook-Air:machines hannish$ cd ..
+Ahameds-MacBook-Air:.vagrant hannish$ cd ..
+Ahameds-MacBook-Air:Vagrant hannish$ vagrant init
+`Vagrantfile` already exists in this directory. Remove it before
+running `vagrant init`.
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ 
+Ahameds-MacBook-Air:Vagrant hannish$ cd
+Ahameds-MacBook-Air:~ hannish$ ls -la
+total 200
+drwxr-xr-x+  47 hannish  staff   1504 Sep 10 22:06 .
+drwxr-xr-x    7 root     admin    224 Sep  3 23:29 ..
+-r--------    1 hannish  staff      7 Dec  6  2017 .CFUserTextEncoding
+-rw-r--r--@   1 hannish  staff  14340 Sep 10 22:08 .DS_Store
+drwx------    4 hannish  staff    128 Sep 10 22:07 .Trash
+-rw-------    1 hannish  staff    220 Mar  3  2019 .Xauthority
+drwxr-xr-x    3 hannish  staff     96 Apr 27 17:27 .anaconda
+drwxr-xr-x   19 hannish  staff    608 May  5  2018 .android
+-rw-------    1 hannish  staff  10616 Sep 10 21:52 .bash_history
+-rw-r--r--    1 hannish  staff   1982 Sep 10 21:52 .bash_profile
+drwx------   14 hannish  staff    448 Sep 10 22:03 .bash_sessions
+-rw-r--r--    1 hannish  staff     48 Feb 11  2019 .bashrc
+drwxr-xr-x    3 hannish  staff     96 Feb  2  2019 .cache
+drwxr-xr-x    5 hannish  staff    160 Apr 27 17:04 .conda
+-rw-r--r--    1 hannish  staff     40 Apr 27 17:34 .condarc
+drwx------    3 hannish  staff     96 Feb 18  2018 .cups
+drwx------    3 hannish  staff     96 Feb 11  2019 .emacs.d
+-rw-------    1 hannish  staff     16 Apr 25  2018 .emulator_console_auth_token
+-rw-------    1 hannish  staff   1417 Feb 16  2019 .gnuplot_history
+drwxr-xr-x    7 hannish  staff    224 Apr 19  2018 .gradle
+drwxr-xr-x    5 hannish  staff    160 Apr 27 14:00 .ipython
+drwxr-xr-x    3 hannish  staff     96 Jun  2  2018 .kodi
+drwxr-xr-x    4 hannish  staff    128 Apr 27 17:39 .matplotlib
+drwxr-xr-x    3 hannish  staff     96 Jul 17  2018 .oracle_jre_usage
+drwxr-xr-x    3 hannish  staff     96 Feb 12  2019 .perlbrew
+drwxr-xr-x   16 hannish  staff    512 Apr 27 17:34 .spyder
+drwx------    3 hannish  staff     96 Apr 15  2018 .ssh
+drwxr-xr-x    4 hannish  staff    128 Sep 10 21:55 .vagrant
+drwxr-xr-x    9 hannish  staff    288 Sep 10 22:12 .vagrant.d
+-rw-------    1 hannish  staff  34952 Sep 10 22:06 .viminfo
+-rw-r--r--    1 hannish  staff    220 Jan 30  2019 .wget-hsts
+dr-xr-xr-x    2 hannish  staff     64 Jul 12 00:05 .zoomus
+drwxr-xr-x    4 hannish  staff    128 Apr 24  2018 AndroidStudioProjects
+drwx------@   4 hannish  staff    128 Feb 11  2019 Applications
+drwxr-xr-x    3 hannish  staff     96 Feb 18  2018 CCZC-513
+drwx------+   5 hannish  staff    160 Sep 10 22:00 Desktop
+drwx------+  13 hannish  staff    416 Aug 30 19:59 Documents
+drwx------+ 140 hannish  staff   4480 Sep 10 22:07 Downloads
+drwx------@  71 hannish  staff   2272 Aug 22 22:00 Library
+drwx------+   5 hannish  staff    160 Mar 12  2019 Movies
+drwx------+   6 hannish  staff    192 Sep  8 20:16 Music
+drwx------+   4 hannish  staff    128 Aug  4 14:06 Pictures
+drwxr-xr-x+   5 hannish  staff    160 Dec  6  2017 Public
+-rw-r--r--    1 hannish  staff   3011 Sep 10 21:55 Vagrantfile
+drwx------    4 hannish  staff    128 Jan 29  2019 VirtualBox VMs
+drwxr-xr-x    3 hannish  staff     96 Feb 11  2019 perl5
+drwxr-xr-x    3 hannish  staff     96 Apr  6 15:04 pic
+Ahameds-MacBook-Air:~ hannish$ rm -rf .vagrant
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ vagrant init
+`Vagrantfile` already exists in this directory. Remove it before
+running `vagrant init`.
+Ahameds-MacBook-Air:~ hannish$ rm -rf .vagrant.d
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ vagrant init
+`Vagrantfile` already exists in this directory. Remove it before
+running `vagrant init`.
+Ahameds-MacBook-Air:~ hannish$ ls -la
+total 200
+drwxr-xr-x+  47 hannish  staff   1504 Sep 10 22:12 .
+drwxr-xr-x    7 root     admin    224 Sep  3 23:29 ..
+-r--------    1 hannish  staff      7 Dec  6  2017 .CFUserTextEncoding
+-rw-r--r--@   1 hannish  staff  14340 Sep 10 22:08 .DS_Store
+drwx------    4 hannish  staff    128 Sep 10 22:07 .Trash
+-rw-------    1 hannish  staff    220 Mar  3  2019 .Xauthority
+drwxr-xr-x    3 hannish  staff     96 Apr 27 17:27 .anaconda
+drwxr-xr-x   19 hannish  staff    608 May  5  2018 .android
+-rw-------    1 hannish  staff  10616 Sep 10 21:52 .bash_history
+-rw-r--r--    1 hannish  staff   1982 Sep 10 21:52 .bash_profile
+drwx------   14 hannish  staff    448 Sep 10 22:03 .bash_sessions
+-rw-r--r--    1 hannish  staff     48 Feb 11  2019 .bashrc
+drwxr-xr-x    3 hannish  staff     96 Feb  2  2019 .cache
+drwxr-xr-x    5 hannish  staff    160 Apr 27 17:04 .conda
+-rw-r--r--    1 hannish  staff     40 Apr 27 17:34 .condarc
+drwx------    3 hannish  staff     96 Feb 18  2018 .cups
+drwx------    3 hannish  staff     96 Feb 11  2019 .emacs.d
+-rw-------    1 hannish  staff     16 Apr 25  2018 .emulator_console_auth_token
+-rw-------    1 hannish  staff   1417 Feb 16  2019 .gnuplot_history
+drwxr-xr-x    7 hannish  staff    224 Apr 19  2018 .gradle
+drwxr-xr-x    5 hannish  staff    160 Apr 27 14:00 .ipython
+drwxr-xr-x    3 hannish  staff     96 Jun  2  2018 .kodi
+drwxr-xr-x    4 hannish  staff    128 Apr 27 17:39 .matplotlib
+drwxr-xr-x    3 hannish  staff     96 Jul 17  2018 .oracle_jre_usage
+drwxr-xr-x    3 hannish  staff     96 Feb 12  2019 .perlbrew
+drwxr-xr-x   16 hannish  staff    512 Apr 27 17:34 .spyder
+drwx------    3 hannish  staff     96 Apr 15  2018 .ssh
+drwxr-xr-x    3 hannish  staff     96 Sep 10 22:12 .vagrant
+drwxr-xr-x    9 hannish  staff    288 Sep 10 22:12 .vagrant.d
+-rw-------    1 hannish  staff  34952 Sep 10 22:06 .viminfo
+-rw-r--r--    1 hannish  staff    220 Jan 30  2019 .wget-hsts
+dr-xr-xr-x    2 hannish  staff     64 Jul 12 00:05 .zoomus
+drwxr-xr-x    4 hannish  staff    128 Apr 24  2018 AndroidStudioProjects
+drwx------@   4 hannish  staff    128 Feb 11  2019 Applications
+drwxr-xr-x    3 hannish  staff     96 Feb 18  2018 CCZC-513
+drwx------+   5 hannish  staff    160 Sep 10 22:00 Desktop
+drwx------+  13 hannish  staff    416 Aug 30 19:59 Documents
+drwx------+ 140 hannish  staff   4480 Sep 10 22:07 Downloads
+drwx------@  71 hannish  staff   2272 Aug 22 22:00 Library
+drwx------+   5 hannish  staff    160 Mar 12  2019 Movies
+drwx------+   6 hannish  staff    192 Sep  8 20:16 Music
+drwx------+   4 hannish  staff    128 Aug  4 14:06 Pictures
+drwxr-xr-x+   5 hannish  staff    160 Dec  6  2017 Public
+-rw-r--r--    1 hannish  staff   3011 Sep 10 21:55 Vagrantfile
+drwx------    4 hannish  staff    128 Jan 29  2019 VirtualBox VMs
+drwxr-xr-x    3 hannish  staff     96 Feb 11  2019 perl5
+drwxr-xr-x    3 hannish  staff     96 Apr  6 15:04 pic
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ vi Vagrantfile 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ rm Vagrantfile 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ vagrant init
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+Ahameds-MacBook-Air:~ hannish$ ls -la
+total 192
+drwxr-xr-x+  47 hannish  staff   1504 Sep 10 22:13 .
+drwxr-xr-x    7 root     admin    224 Sep  3 23:29 ..
+-r--------    1 hannish  staff      7 Dec  6  2017 .CFUserTextEncoding
+-rw-r--r--@   1 hannish  staff  14340 Sep 10 22:08 .DS_Store
+drwx------    4 hannish  staff    128 Sep 10 22:07 .Trash
+-rw-------    1 hannish  staff    220 Mar  3  2019 .Xauthority
+drwxr-xr-x    3 hannish  staff     96 Apr 27 17:27 .anaconda
+drwxr-xr-x   19 hannish  staff    608 May  5  2018 .android
+-rw-------    1 hannish  staff  10616 Sep 10 21:52 .bash_history
+-rw-r--r--    1 hannish  staff   1982 Sep 10 21:52 .bash_profile
+drwx------   14 hannish  staff    448 Sep 10 22:03 .bash_sessions
+-rw-r--r--    1 hannish  staff     48 Feb 11  2019 .bashrc
+drwxr-xr-x    3 hannish  staff     96 Feb  2  2019 .cache
+drwxr-xr-x    5 hannish  staff    160 Apr 27 17:04 .conda
+-rw-r--r--    1 hannish  staff     40 Apr 27 17:34 .condarc
+drwx------    3 hannish  staff     96 Feb 18  2018 .cups
+drwx------    3 hannish  staff     96 Feb 11  2019 .emacs.d
+-rw-------    1 hannish  staff     16 Apr 25  2018 .emulator_console_auth_token
+-rw-------    1 hannish  staff   1417 Feb 16  2019 .gnuplot_history
+drwxr-xr-x    7 hannish  staff    224 Apr 19  2018 .gradle
+drwxr-xr-x    5 hannish  staff    160 Apr 27 14:00 .ipython
+drwxr-xr-x    3 hannish  staff     96 Jun  2  2018 .kodi
+drwxr-xr-x    4 hannish  staff    128 Apr 27 17:39 .matplotlib
+drwxr-xr-x    3 hannish  staff     96 Jul 17  2018 .oracle_jre_usage
+drwxr-xr-x    3 hannish  staff     96 Feb 12  2019 .perlbrew
+drwxr-xr-x   16 hannish  staff    512 Apr 27 17:34 .spyder
+drwx------    3 hannish  staff     96 Apr 15  2018 .ssh
+drwxr-xr-x    3 hannish  staff     96 Sep 10 22:12 .vagrant
+drwxr-xr-x    9 hannish  staff    288 Sep 10 22:13 .vagrant.d
+-rw-------    1 hannish  staff  31118 Sep 10 22:13 .viminfo
+-rw-r--r--    1 hannish  staff    220 Jan 30  2019 .wget-hsts
+dr-xr-xr-x    2 hannish  staff     64 Jul 12 00:05 .zoomus
+drwxr-xr-x    4 hannish  staff    128 Apr 24  2018 AndroidStudioProjects
+drwx------@   4 hannish  staff    128 Feb 11  2019 Applications
+drwxr-xr-x    3 hannish  staff     96 Feb 18  2018 CCZC-513
+drwx------+   5 hannish  staff    160 Sep 10 22:00 Desktop
+drwx------+  13 hannish  staff    416 Aug 30 19:59 Documents
+drwx------+ 140 hannish  staff   4480 Sep 10 22:07 Downloads
+drwx------@  71 hannish  staff   2272 Aug 22 22:00 Library
+drwx------+   5 hannish  staff    160 Mar 12  2019 Movies
+drwx------+   6 hannish  staff    192 Sep  8 20:16 Music
+drwx------+   4 hannish  staff    128 Aug  4 14:06 Pictures
+drwxr-xr-x+   5 hannish  staff    160 Dec  6  2017 Public
+-rw-r--r--    1 hannish  staff   3011 Sep 10 22:13 Vagrantfile
+drwx------    4 hannish  staff    128 Jan 29  2019 VirtualBox VMs
+drwxr-xr-x    3 hannish  staff     96 Feb 11  2019 perl5
+drwxr-xr-x    3 hannish  staff     96 Apr  6 15:04 pic
+Ahameds-MacBook-Air:~ hannish$ vi Vagrantfile 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ ls -lrt
+total 16
+drwxr-xr-x+   5 hannish  staff   160 Dec  6  2017 Public
+drwxr-xr-x    3 hannish  staff    96 Feb 18  2018 CCZC-513
+drwxr-xr-x    4 hannish  staff   128 Apr 24  2018 AndroidStudioProjects
+drwx------    4 hannish  staff   128 Jan 29  2019 VirtualBox VMs
+drwx------@   4 hannish  staff   128 Feb 11  2019 Applications
+drwxr-xr-x    3 hannish  staff    96 Feb 11  2019 perl5
+drwx------+   5 hannish  staff   160 Mar 12  2019 Movies
+drwxr-xr-x    3 hannish  staff    96 Apr  6 15:04 pic
+drwx------+   4 hannish  staff   128 Aug  4 14:06 Pictures
+drwx------@  71 hannish  staff  2272 Aug 22 22:00 Library
+drwx------+  13 hannish  staff   416 Aug 30 19:59 Documents
+drwx------+   6 hannish  staff   192 Sep  8 20:16 Music
+drwx------+   5 hannish  staff   160 Sep 10 22:00 Desktop
+drwx------+ 140 hannish  staff  4480 Sep 10 22:07 Downloads
+-rw-r--r--    1 hannish  staff  4116 Sep 10 22:14 Vagrantfile
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ more Vagrantfile 
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+  # The most common configuration options are documented and commented below.
+  # For a complete reference, please see the online documentation at
+  # https://docs.vagrantup.com.
+
+  # Every Vagrant development environment requires a box. You can search for
+  # boxes at https://vagrantcloud.com/search.
+  config.vm.box = "bento/centos-7.3"
+
+  # Disable automatic box update checking. If you disable this, then
+  # boxes will only be checked for updates when the user runs
+  # `vagrant box outdated`. This is not recommended.
+  # config.vm.box_check_update = false
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine. In the example below,
+  # accessing "localhost:8080" will access port 80 on the guest machine.
+  # NOTE: This will enable public access to the opened port
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine and only allow access
+  # via 127.0.0.1 to disable public access
+  # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+
+  # Create a private network, which allows host-only access to the machine
+  # using a specific IP.
+  # config.vm.network "private_network", ip: "192.168.33.10"
+
+  # Create a public network, which generally matched to bridged network.
+  # Bridged networks make the machine appear as another physical device on
+  # your network.
+  # config.vm.network "public_network"
+
+  # Share an additional folder to the guest VM. The first argument is
+  # the path on the host to the actual folder. The second argument is
+  # the path on the guest to mount the folder. And the optional third
+  # argument is a set of non-required options.
+  # config.vm.synced_folder "../data", "/vagrant_data"
+
+  # Provider-specific configuration so you can fine-tune various
+  # backing providers for Vagrant. These expose provider-specific options.
+  # Example for VirtualBox:
+  #
+  # config.vm.provider "virtualbox" do |vb|
+  #   # Display the VirtualBox GUI when booting the machine
+  #   vb.gui = true
+  #
+  #   # Customize the amount of memory on the VM:
+  #   vb.memory = "1024"
+  # end
+  #
+  # View the documentation for the provider you are using for more
+  # information on available options.
+
+  # Enable provisioning with a shell script. Additional provisioners such as
+  # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
+  # documentation for more information about their specific syntax and use.
+  # config.vm.provision "shell", inline: <<-SHELL
+  #   apt-get update
+  #   apt-get install -y apache2
+  # SHELL
+  config.vm.define "client" do |client|
+    client.vm.hostname = "client"
+    client.vm.network "private_network", ip: "192.168.33.10"
+  end
+  config.vm.define "web" do |web|
+    web.vm.hostname = "apache"
+    web.vm.network "private_network", ip: "192.168.33.20"
+    web.vm.provision "ansible" do |ansible|
+      ansible.playbook = "application.yml"
+    end
+  end
+  config.vm.define "webdev" do |web|
+    web.vm.hostname = "apachedev"
+    web.vm.network "private_network", ip: "192.168.33.25"
+    web.vm.provision "ansible" do |ansible|
+      ansible.playbook = "application.yml"
+    end
+  end
+  config.vm.define "db" do |db|
+    db.vm.hostname = "mysql"
+    db.vm.network "private_network", ip: "192.168.33.30"
+    db.vm.provision "ansible" do |ansible|
+      ansible.playbook = "database.yml"
+    end
+  end
+  config.vm.define "jenkins" do |jenkins|
+    jenkins.vm.box = "bento/ubuntu-16.10"
+    jenkins.vm.hostname = "jenkins"
+    jenkins.vm.network "private_network", ip: "192.168.33.40"
+    jenkins.vm.provision "ansible" do |ansible|
+      ansible.playbook = "jenkins.yml"
+    end
+  end
+end
+Ahameds-MacBook-Air:~ hannish$ vagrant up client
+Bringing machine 'client' up with 'virtualbox' provider...
+==> client: Box 'bento/centos-7.3' could not be found. Attempting to find and install...
+    client: Box Provider: virtualbox
+    client: Box Version: >= 0
+==> client: Loading metadata for box 'bento/centos-7.3'
+    client: URL: https://vagrantcloud.com/bento/centos-7.3
+==> client: Adding box 'bento/centos-7.3' (v201708.22.0) for provider: virtualbox
+    client: Downloading: https://vagrantcloud.com/bento/boxes/centos-7.3/versions/201708.22.0/providers/virtualbox.box
+    client: Download redirected to host: vagrantcloud-files-production.s3.amazonaws.com
+==> client: Successfully added box 'bento/centos-7.3' (v201708.22.0) for 'virtualbox'!
+==> client: Importing base box 'bento/centos-7.3'...
+==> client: Matching MAC address for NAT networking...
+==> client: Checking if box 'bento/centos-7.3' version '201708.22.0' is up to date...
+==> client: Setting the name of the VM: hannish_client_1568134080454_49353
+Vagrant is currently configured to create VirtualBox synced folders with
+the `SharedFoldersEnableSymlinksCreate` option enabled. If the Vagrant
+guest is not trusted, you may want to disable this option. For more
+information on this option, please refer to the VirtualBox manual:
+
+  https://www.virtualbox.org/manual/ch04.html#sharedfolders
+
+This option can be disabled globally with an environment variable:
+
+  VAGRANT_DISABLE_VBOXSYMLINKCREATE=1
+
+or on a per folder basis within the Vagrantfile:
+
+  config.vm.synced_folder '/host/path', '/guest/path', SharedFoldersEnableSymlinksCreate: false
+==> client: Vagrant has detected a configuration issue which exposes a
+==> client: vulnerability with the installed version of VirtualBox. The
+==> client: current guest is configured to use an E1000 NIC type for a
+==> client: network adapter which is vulnerable in this version of VirtualBox.
+==> client: Ensure the guest is trusted to use this configuration or update
+==> client: the NIC type using one of the methods below:
+==> client: 
+==> client:   https://www.vagrantup.com/docs/virtualbox/configuration.html#default-nic-type
+==> client:   https://www.vagrantup.com/docs/virtualbox/networking.html#virtualbox-nic-type
+==> client: Clearing any previously set network interfaces...
+==> client: Preparing network interfaces based on configuration...
+    client: Adapter 1: nat
+    client: Adapter 2: hostonly
+==> client: Forwarding ports...
+    client: 22 (guest) => 2222 (host) (adapter 1)
+==> client: Booting VM...
+==> client: Waiting for machine to boot. This may take a few minutes...
+    client: SSH address: 127.0.0.1:2222
+    client: SSH username: vagrant
+    client: SSH auth method: private key
+    client: Warning: Connection reset. Retrying...
+    client: 
+    client: Vagrant insecure key detected. Vagrant will automatically replace
+    client: this with a newly generated keypair for better security.
+    client: 
+    client: Inserting generated public key within guest...
+    client: Removing insecure key from the guest if it's present...
+    client: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> client: Machine booted and ready!
+==> client: Checking for guest additions in VM...
+    client: The guest additions on this VM do not match the installed version of
+    client: VirtualBox! In most cases this is fine, but in rare cases it can
+    client: prevent things such as shared folders from working properly. If you see
+    client: shared folder errors, please make sure the guest additions within the
+    client: virtual machine match the version of VirtualBox you have installed on
+    client: your host and reload your VM.
+    client: 
+    client: Guest Additions Version: 5.1.26
+    client: VirtualBox Version: 5.2
+==> client: Setting hostname...
+==> client: Configuring and enabling network interfaces...
+==> client: Mounting shared folders...
+    client: /vagrant => /Users/hannish
+Ahameds-MacBook-Air:~ hannish$ vagrant status
+Current machine states:
+
+client                    running (virtualbox)
+web                       not created (virtualbox)
+webdev                    not created (virtualbox)
+db                        not created (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:~ hannish$ cp Vagrantfile ~/Desktop/BITS_Dessertation/BITS-Final-Project/Resource/
+Ahameds-MacBook-Air:~ hannish$ ls -lrt
+total 16
+drwxr-xr-x+   5 hannish  staff   160 Dec  6  2017 Public
+drwxr-xr-x    3 hannish  staff    96 Feb 18  2018 CCZC-513
+drwxr-xr-x    4 hannish  staff   128 Apr 24  2018 AndroidStudioProjects
+drwx------@   4 hannish  staff   128 Feb 11  2019 Applications
+drwxr-xr-x    3 hannish  staff    96 Feb 11  2019 perl5
+drwx------+   5 hannish  staff   160 Mar 12  2019 Movies
+drwxr-xr-x    3 hannish  staff    96 Apr  6 15:04 pic
+drwx------+   4 hannish  staff   128 Aug  4 14:06 Pictures
+drwx------@  71 hannish  staff  2272 Aug 22 22:00 Library
+drwx------+  13 hannish  staff   416 Aug 30 19:59 Documents
+drwx------+   6 hannish  staff   192 Sep  8 20:16 Music
+drwx------+   5 hannish  staff   160 Sep 10 22:00 Desktop
+drwx------+ 140 hannish  staff  4480 Sep 10 22:07 Downloads
+-rw-r--r--    1 hannish  staff  4116 Sep 10 22:14 Vagrantfile
+drwx------    5 hannish  staff   160 Sep 10 22:18 VirtualBox VMs
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ vagrant box remove client
+The box you requested to be removed could not be found. No
+boxes named 'client' could be found.
+Ahameds-MacBook-Air:~ hannish$ vagrant ssh client
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+[vagrant@client ~]$ 
+[vagrant@client ~]$ 
+[vagrant@client ~]$ df -h
+Filesystem           Size  Used Avail Use% Mounted on
+/dev/mapper/cl-root   37G  1.2G   36G   4% /
+devtmpfs             487M     0  487M   0% /dev
+tmpfs                497M     0  497M   0% /dev/shm
+tmpfs                497M  6.6M  490M   2% /run
+tmpfs                497M     0  497M   0% /sys/fs/cgroup
+/dev/sda1           1014M  183M  832M  18% /boot
+vagrant              113G   86G   28G  77% /vagrant
+tmpfs                100M     0  100M   0% /run/user/1000
+[vagrant@client ~]$ 
+[vagrant@client ~]$ 
+[vagrant@client ~]$ exit
+logout
+Connection to 127.0.0.1 closed.
+Ahameds-MacBook-Air:~ hannish$ vagrant box remove --all
+This command was not invoked properly. The help for this command is
+available below.
+
+Usage: vagrant box remove <name>
+
+Options:
+
+    -f, --force                      Remove without confirmation.
+        --provider PROVIDER          The specific provider type for the box to remove
+        --box-version VERSION        The specific version of the box to remove
+        --all                        Remove all available versions of the box
+    -h, --help                       Print this help
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ vagrant status
+Current machine states:
+
+client                    running (virtualbox)
+web                       not created (virtualbox)
+webdev                    not created (virtualbox)
+db                        not created (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:~ hannish$ vagrant status NAME
+The machine with the name 'NAME' was not found configured for
+this Vagrant environment.
+Ahameds-MacBook-Air:~ hannish$ vagrant status client
+Current machine states:
+
+client                    running (virtualbox)
+
+The VM is running. To stop this VM, you can run `vagrant halt` to
+shut it down forcefully, or you can run `vagrant suspend` to simply
+suspend the virtual machine. In either case, to restart it again,
+simply run `vagrant up`.
+Ahameds-MacBook-Air:~ hannish$ vagrant box remove client
+The box you requested to be removed could not be found. No
+boxes named 'client' could be found.
+Ahameds-MacBook-Air:~ hannish$ vagrant box list
+bento/centos-7.3 (virtualbox, 201708.22.0)
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ vagrant destroy client
+    client: Are you sure you want to destroy the 'client' VM? [y/N] y
+==> client: Forcing shutdown of VM...
+==> client: Destroying VM and associated drives...
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ vagrant status
+Current machine states:
+
+client                    not created (virtualbox)
+web                       not created (virtualbox)
+webdev                    not created (virtualbox)
+db                        not created (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ vagrant up client
+Bringing machine 'client' up with 'virtualbox' provider...
+==> client: Importing base box 'bento/centos-7.3'...
+==> client: Matching MAC address for NAT networking...
+==> client: Checking if box 'bento/centos-7.3' version '201708.22.0' is up to date...
+==> client: Setting the name of the VM: hannish_client_1568134806496_39284
+==> client: Vagrant has detected a configuration issue which exposes a
+==> client: vulnerability with the installed version of VirtualBox. The
+==> client: current guest is configured to use an E1000 NIC type for a
+==> client: network adapter which is vulnerable in this version of VirtualBox.
+==> client: Ensure the guest is trusted to use this configuration or update
+==> client: the NIC type using one of the methods below:
+==> client: 
+==> client:   https://www.vagrantup.com/docs/virtualbox/configuration.html#default-nic-type
+==> client:   https://www.vagrantup.com/docs/virtualbox/networking.html#virtualbox-nic-type
+==> client: Clearing any previously set network interfaces...
+==> client: Preparing network interfaces based on configuration...
+    client: Adapter 1: nat
+    client: Adapter 2: hostonly
+==> client: Forwarding ports...
+    client: 22 (guest) => 2222 (host) (adapter 1)
+==> client: Booting VM...
+==> client: Waiting for machine to boot. This may take a few minutes...
+    client: SSH address: 127.0.0.1:2222
+    client: SSH username: vagrant
+    client: SSH auth method: private key
+    client: Warning: Connection reset. Retrying...
+    client: Warning: Remote connection disconnect. Retrying...
+    client: 
+    client: Vagrant insecure key detected. Vagrant will automatically replace
+    client: this with a newly generated keypair for better security.
+    client: 
+    client: Inserting generated public key within guest...
+    client: Removing insecure key from the guest if it's present...
+    client: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> client: Machine booted and ready!
+==> client: Checking for guest additions in VM...
+    client: The guest additions on this VM do not match the installed version of
+    client: VirtualBox! In most cases this is fine, but in rare cases it can
+    client: prevent things such as shared folders from working properly. If you see
+    client: shared folder errors, please make sure the guest additions within the
+    client: virtual machine match the version of VirtualBox you have installed on
+    client: your host and reload your VM.
+    client: 
+    client: Guest Additions Version: 5.1.26
+    client: VirtualBox Version: 5.2
+==> client: Setting hostname...
+==> client: Configuring and enabling network interfaces...
+==> client: Mounting shared folders...
+    client: /vagrant => /Users/hannish
+Ahameds-MacBook-Air:~ hannish$ vagrant status
+Current machine states:
+
+client                    running (virtualbox)
+web                       not created (virtualbox)
+webdev                    not created (virtualbox)
+db                        not created (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ git
+git                 git-cvsserver       git-receive-pack    git-shell           git-upload-archive  git-upload-pack     
+Ahameds-MacBook-Air:~ hannish$ git
+git                 git-cvsserver       git-receive-pack    git-shell           git-upload-archive  git-upload-pack     
+Ahameds-MacBook-Air:~ hannish$ git
+git                 git-cvsserver       git-receive-pack    git-shell           git-upload-archive  git-upload-pack     
+Ahameds-MacBook-Air:~ hannish$ ls -lrt
+total 16
+drwxr-xr-x+   5 hannish  staff   160 Dec  6  2017 Public
+drwxr-xr-x    3 hannish  staff    96 Feb 18  2018 CCZC-513
+drwxr-xr-x    4 hannish  staff   128 Apr 24  2018 AndroidStudioProjects
+drwx------@   4 hannish  staff   128 Feb 11  2019 Applications
+drwxr-xr-x    3 hannish  staff    96 Feb 11  2019 perl5
+drwx------+   5 hannish  staff   160 Mar 12  2019 Movies
+drwxr-xr-x    3 hannish  staff    96 Apr  6 15:04 pic
+drwx------+   4 hannish  staff   128 Aug  4 14:06 Pictures
+drwx------@  71 hannish  staff  2272 Aug 22 22:00 Library
+drwx------+  13 hannish  staff   416 Aug 30 19:59 Documents
+drwx------+   6 hannish  staff   192 Sep  8 20:16 Music
+drwx------+   5 hannish  staff   160 Sep 10 22:00 Desktop
+drwx------+ 140 hannish  staff  4480 Sep 10 22:07 Downloads
+-rw-r--r--    1 hannish  staff  4116 Sep 10 22:14 Vagrantfile
+drwx------    5 hannish  staff   160 Sep 10 22:30 VirtualBox VMs
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ 
+Ahameds-MacBook-Air:~ hannish$ cd Desktop/BITS_Dessertation/BITS-Final-Project/Resource/
+Ahameds-MacBook-Air:Resource hannish$ ls -lrt
+total 72
+-rwxr-xr-x@ 1 hannish  staff  2609 Oct  1  2017 application.yml
+-rw-r--r--@ 1 hannish  staff   714 Sep 10 18:56 jenkins.yml
+-rw-r--r--@ 1 hannish  staff   179 Sep 10 19:17 htaccess
+-rw-r--r--@ 1 hannish  staff  4545 Sep 10 19:52 database.php
+-rw-r--r--@ 1 hannish  staff   180 Sep 10 20:04 bookings.sql
+-rw-r--r--@ 1 hannish  staff  1157 Sep 10 22:21 database.yml
+-rw-r--r--  1 hannish  staff  4116 Sep 10 22:23 Vagrantfile
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ vagrant status
+Current machine states:
+
+client                    not created (virtualbox)
+web                       not created (virtualbox)
+webdev                    not created (virtualbox)
+db                        not created (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ vagrant up web db
+Bringing machine 'web' up with 'virtualbox' provider...
+Bringing machine 'db' up with 'virtualbox' provider...
+==> web: Importing base box 'bento/centos-7.3'...
+==> web: Matching MAC address for NAT networking...
+==> web: Checking if box 'bento/centos-7.3' version '201708.22.0' is up to date...
+==> web: Setting the name of the VM: Resource_web_1568135971141_5749
+==> web: Fixed port collision for 22 => 2222. Now on port 2200.
+==> web: Vagrant has detected a configuration issue which exposes a
+==> web: vulnerability with the installed version of VirtualBox. The
+==> web: current guest is configured to use an E1000 NIC type for a
+==> web: network adapter which is vulnerable in this version of VirtualBox.
+==> web: Ensure the guest is trusted to use this configuration or update
+==> web: the NIC type using one of the methods below:
+==> web: 
+==> web:   https://www.vagrantup.com/docs/virtualbox/configuration.html#default-nic-type
+==> web:   https://www.vagrantup.com/docs/virtualbox/networking.html#virtualbox-nic-type
+==> web: Clearing any previously set network interfaces...
+==> web: Preparing network interfaces based on configuration...
+    web: Adapter 1: nat
+    web: Adapter 2: hostonly
+==> web: Forwarding ports...
+    web: 22 (guest) => 2200 (host) (adapter 1)
+==> web: Booting VM...
+==> web: Waiting for machine to boot. This may take a few minutes...
+    web: SSH address: 127.0.0.1:2200
+    web: SSH username: vagrant
+    web: SSH auth method: private key
+    web: 
+    web: Vagrant insecure key detected. Vagrant will automatically replace
+    web: this with a newly generated keypair for better security.
+    web: 
+    web: Inserting generated public key within guest...
+    web: Removing insecure key from the guest if it's present...
+    web: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> web: Machine booted and ready!
+==> web: Checking for guest additions in VM...
+    web: The guest additions on this VM do not match the installed version of
+    web: VirtualBox! In most cases this is fine, but in rare cases it can
+    web: prevent things such as shared folders from working properly. If you see
+    web: shared folder errors, please make sure the guest additions within the
+    web: virtual machine match the version of VirtualBox you have installed on
+    web: your host and reload your VM.
+    web: 
+    web: Guest Additions Version: 5.1.26
+    web: VirtualBox Version: 5.2
+==> web: Setting hostname...
+==> web: Configuring and enabling network interfaces...
+==> web: Mounting shared folders...
+    web: /vagrant => /Users/hannish/Desktop/BITS_Dessertation/BITS-Final-Project/Resource
+==> web: Running provisioner: ansible...
+Vagrant has automatically selected the compatibility mode '2.0'
+according to the Ansible version installed (2.8.4).
+
+Alternatively, the compatibility mode can be specified in your Vagrantfile:
+https://www.vagrantup.com/docs/provisioning/ansible_common.html#compatibility_mode
+
+    web: Running ansible-playbook...
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [web]
+
+TASK [Install git client] ******************************************************
+changed: [web]
+
+TASK [Download and deploy Swift] ***********************************************
+changed: [web]
+
+TASK [Install the Apache web server] *******************************************
+changed: [web]
+
+TASK [Ensure that Apache is started and enabled on system boot] ****************
+changed: [web]
+
+TASK [Add EPEL repository] *****************************************************
+fatal: [web]: FAILED! => {"changed": false, "msg": "Failure downloading https://mirrors.nic.cz/epel/7/x86_64/e/epel-release-7-10.noarch.rpm, HTTP Error 404: Not Found"}
+
+PLAY RECAP *********************************************************************
+web                        : ok=5    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Ansible failed to complete successfully. Any error output should be
+visible above. Please fix these errors and try again.
+Ahameds-MacBook-Air:Resource hannish$ vagrant status
+Current machine states:
+
+client                    not created (virtualbox)
+web                       running (virtualbox)
+webdev                    not created (virtualbox)
+db                        not created (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:Resource hannish$ vagrant provision web
+==> web: Running provisioner: ansible...
+Vagrant has automatically selected the compatibility mode '2.0'
+according to the Ansible version installed (2.8.4).
+
+Alternatively, the compatibility mode can be specified in your Vagrantfile:
+https://www.vagrantup.com/docs/provisioning/ansible_common.html#compatibility_mode
+
+    web: Running ansible-playbook...
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [web]
+
+TASK [Install git client] ******************************************************
+ok: [web]
+
+TASK [Download and deploy Silver] **********************************************
+^C==> web: Waiting for cleanup before exiting...
+ [ERROR]: User interrupted execution
+
+Ansible failed to complete successfully. Any error output should be
+visible above. Please fix these errors and try again.
+Ahameds-MacBook-Air:Resource hannish$ vagrant destroy web
+    web: Are you sure you want to destroy the 'web' VM? [y/N] y
+==> web: Forcing shutdown of VM...
+==> web: Destroying VM and associated drives...
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ vagrant status
+Current machine states:
+
+client                    not created (virtualbox)
+web                       not created (virtualbox)
+webdev                    not created (virtualbox)
+db                        not created (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:Resource hannish$ vagrant up client
+Bringing machine 'client' up with 'virtualbox' provider...
+==> client: Importing base box 'bento/centos-7.3'...
+==> client: Matching MAC address for NAT networking...
+==> client: Checking if box 'bento/centos-7.3' version '201708.22.0' is up to date...
+==> client: Setting the name of the VM: Resource_client_1568137213771_97523
+==> client: Fixed port collision for 22 => 2222. Now on port 2200.
+==> client: Vagrant has detected a configuration issue which exposes a
+==> client: vulnerability with the installed version of VirtualBox. The
+==> client: current guest is configured to use an E1000 NIC type for a
+==> client: network adapter which is vulnerable in this version of VirtualBox.
+==> client: Ensure the guest is trusted to use this configuration or update
+==> client: the NIC type using one of the methods below:
+==> client: 
+==> client:   https://www.vagrantup.com/docs/virtualbox/configuration.html#default-nic-type
+==> client:   https://www.vagrantup.com/docs/virtualbox/networking.html#virtualbox-nic-type
+==> client: Clearing any previously set network interfaces...
+==> client: Preparing network interfaces based on configuration...
+    client: Adapter 1: nat
+    client: Adapter 2: hostonly
+==> client: Forwarding ports...
+    client: 22 (guest) => 2200 (host) (adapter 1)
+==> client: Booting VM...
+==> client: Waiting for machine to boot. This may take a few minutes...
+    client: SSH address: 127.0.0.1:2200
+    client: SSH username: vagrant
+    client: SSH auth method: private key
+    client: 
+    client: Vagrant insecure key detected. Vagrant will automatically replace
+    client: this with a newly generated keypair for better security.
+    client: 
+    client: Inserting generated public key within guest...
+    client: Removing insecure key from the guest if it's present...
+    client: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> client: Machine booted and ready!
+==> client: Checking for guest additions in VM...
+    client: The guest additions on this VM do not match the installed version of
+    client: VirtualBox! In most cases this is fine, but in rare cases it can
+    client: prevent things such as shared folders from working properly. If you see
+    client: shared folder errors, please make sure the guest additions within the
+    client: virtual machine match the version of VirtualBox you have installed on
+    client: your host and reload your VM.
+    client: 
+    client: Guest Additions Version: 5.1.26
+    client: VirtualBox Version: 5.2
+==> client: Setting hostname...
+==> client: Configuring and enabling network interfaces...
+==> client: Mounting shared folders...
+    client: /vagrant => /Users/hannish/Desktop/BITS_Dessertation/BITS-Final-Project/Resource
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ vagrant ssh client
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+[vagrant@client ~]$ df -h
+Filesystem           Size  Used Avail Use% Mounted on
+/dev/mapper/cl-root   37G  1.2G   36G   4% /
+devtmpfs             487M     0  487M   0% /dev
+tmpfs                497M     0  497M   0% /dev/shm
+tmpfs                497M  6.6M  490M   2% /run
+tmpfs                497M     0  497M   0% /sys/fs/cgroup
+/dev/sda1           1014M  183M  832M  18% /boot
+vagrant              113G   83G   31G  74% /vagrant
+tmpfs                100M     0  100M   0% /run/user/1000
+[vagrant@client ~]$ exit
+logout
+Connection to 127.0.0.1 closed.
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ cd
+Ahameds-MacBook-Air:~ hannish$ vagrant status
+Current machine states:
+
+client                    running (virtualbox)
+web                       not created (virtualbox)
+webdev                    not created (virtualbox)
+db                        not created (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:~ hannish$ cd Desktop/BITS_Dessertation/BITS-Final-Project/Resource/
+Ahameds-MacBook-Air:Resource hannish$ vagrant status
+Current machine states:
+
+client                    running (virtualbox)
+web                       not created (virtualbox)
+webdev                    not created (virtualbox)
+db                        not created (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ vagrant up web db
+Bringing machine 'web' up with 'virtualbox' provider...
+Bringing machine 'db' up with 'virtualbox' provider...
+==> web: Importing base box 'bento/centos-7.3'...
+==> web: Matching MAC address for NAT networking...
+==> web: Checking if box 'bento/centos-7.3' version '201708.22.0' is up to date...
+==> web: Setting the name of the VM: Resource_web_1568137431194_30116
+==> web: Fixed port collision for 22 => 2222. Now on port 2201.
+==> web: Vagrant has detected a configuration issue which exposes a
+==> web: vulnerability with the installed version of VirtualBox. The
+==> web: current guest is configured to use an E1000 NIC type for a
+==> web: network adapter which is vulnerable in this version of VirtualBox.
+==> web: Ensure the guest is trusted to use this configuration or update
+==> web: the NIC type using one of the methods below:
+==> web: 
+==> web:   https://www.vagrantup.com/docs/virtualbox/configuration.html#default-nic-type
+==> web:   https://www.vagrantup.com/docs/virtualbox/networking.html#virtualbox-nic-type
+==> web: Clearing any previously set network interfaces...
+==> web: Preparing network interfaces based on configuration...
+    web: Adapter 1: nat
+    web: Adapter 2: hostonly
+==> web: Forwarding ports...
+    web: 22 (guest) => 2201 (host) (adapter 1)
+==> web: Booting VM...
+==> web: Waiting for machine to boot. This may take a few minutes...
+    web: SSH address: 127.0.0.1:2201
+    web: SSH username: vagrant
+    web: SSH auth method: private key
+    web: 
+    web: Vagrant insecure key detected. Vagrant will automatically replace
+    web: this with a newly generated keypair for better security.
+    web: 
+    web: Inserting generated public key within guest...
+    web: Removing insecure key from the guest if it's present...
+    web: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> web: Machine booted and ready!
+==> web: Checking for guest additions in VM...
+    web: The guest additions on this VM do not match the installed version of
+    web: VirtualBox! In most cases this is fine, but in rare cases it can
+    web: prevent things such as shared folders from working properly. If you see
+    web: shared folder errors, please make sure the guest additions within the
+    web: virtual machine match the version of VirtualBox you have installed on
+    web: your host and reload your VM.
+    web: 
+    web: Guest Additions Version: 5.1.26
+    web: VirtualBox Version: 5.2
+==> web: Setting hostname...
+==> web: Configuring and enabling network interfaces...
+==> web: Mounting shared folders...
+    web: /vagrant => /Users/hannish/Desktop/BITS_Dessertation/BITS-Final-Project/Resource
+==> web: Running provisioner: ansible...
+Vagrant has automatically selected the compatibility mode '2.0'
+according to the Ansible version installed (2.8.4).
+
+Alternatively, the compatibility mode can be specified in your Vagrantfile:
+https://www.vagrantup.com/docs/provisioning/ansible_common.html#compatibility_mode
+
+    web: Running ansible-playbook...
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [web]
+
+TASK [Install git client] ******************************************************
+changed: [web]
+
+TASK [Download and deploy Swift] ***********************************************
+changed: [web]
+
+TASK [Install the Apache web server] *******************************************
+changed: [web]
+
+TASK [Ensure that Apache is started and enabled on system boot] ****************
+changed: [web]
+
+TASK [Add EPEL repository] *****************************************************
+changed: [web]
+
+TASK [Add Webtatic repository] *************************************************
+changed: [web]
+
+TASK [Install PHP 7 and some required packages] ********************************
+[DEPRECATION WARNING]: Invoking "yum" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{ item }}"`, please use `name: ['mod_php71w', 
+'php71w-cli', 'php71w-common', 'php71w-gd', 'php71w-mbstring', 'php71w-mcrypt',
+ 'php71w-mysqlnd', 'php71w-xml', 'unzip', 'vim', 'mariadb']` and remove the 
+loop. This feature will be removed in version 2.11. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+changed: [web] => (item=['mod_php71w', 'php71w-cli', 'php71w-common', 'php71w-gd', 'php71w-mbstring', 'php71w-mcrypt', 'php71w-mysqlnd', 'php71w-xml', 'unzip', 'vim', 'mariadb'])
+
+TASK [Change the files ownership to be owned by vagrant] ***********************
+changed: [web]
+
+TASK [Change the web home directory to point at /var/www/html/CodeIgniter-3.1.5] ***
+changed: [web]
+
+TASK [Ensure that mod_rewrite is enabled in Apache] ****************************
+ok: [web]
+
+TASK [Copy htaccess to CodeIgniter] ********************************************
+changed: [web]
+
+TASK [Allow .htaccess file to be used] *****************************************
+changed: [web]
+
+TASK [Upload the database.php file] ********************************************
+changed: [web]
+
+RUNNING HANDLER [restart Apache] ***********************************************
+changed: [web]
+
+PLAY RECAP *********************************************************************
+web                        : ok=15   changed=13   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+==> db: Importing base box 'bento/centos-7.3'...
+==> db: Matching MAC address for NAT networking...
+==> db: Checking if box 'bento/centos-7.3' version '201708.22.0' is up to date...
+==> db: Setting the name of the VM: Resource_db_1568137628561_23222
+==> db: Fixed port collision for 22 => 2222. Now on port 2202.
+==> db: Vagrant has detected a configuration issue which exposes a
+==> db: vulnerability with the installed version of VirtualBox. The
+==> db: current guest is configured to use an E1000 NIC type for a
+==> db: network adapter which is vulnerable in this version of VirtualBox.
+==> db: Ensure the guest is trusted to use this configuration or update
+==> db: the NIC type using one of the methods below:
+==> db: 
+==> db:   https://www.vagrantup.com/docs/virtualbox/configuration.html#default-nic-type
+==> db:   https://www.vagrantup.com/docs/virtualbox/networking.html#virtualbox-nic-type
+==> db: Clearing any previously set network interfaces...
+==> db: Preparing network interfaces based on configuration...
+    db: Adapter 1: nat
+    db: Adapter 2: hostonly
+==> db: Forwarding ports...
+    db: 22 (guest) => 2202 (host) (adapter 1)
+==> db: Booting VM...
+==> db: Waiting for machine to boot. This may take a few minutes...
+    db: SSH address: 127.0.0.1:2202
+    db: SSH username: vagrant
+    db: SSH auth method: private key
+    db: 
+    db: Vagrant insecure key detected. Vagrant will automatically replace
+    db: this with a newly generated keypair for better security.
+    db: 
+    db: Inserting generated public key within guest...
+    db: Removing insecure key from the guest if it's present...
+    db: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> db: Machine booted and ready!
+==> db: Checking for guest additions in VM...
+    db: The guest additions on this VM do not match the installed version of
+    db: VirtualBox! In most cases this is fine, but in rare cases it can
+    db: prevent things such as shared folders from working properly. If you see
+    db: shared folder errors, please make sure the guest additions within the
+    db: virtual machine match the version of VirtualBox you have installed on
+    db: your host and reload your VM.
+    db: 
+    db: Guest Additions Version: 5.1.26
+    db: VirtualBox Version: 5.2
+==> db: Setting hostname...
+==> db: Configuring and enabling network interfaces...
+==> db: Mounting shared folders...
+    db: /vagrant => /Users/hannish/Desktop/BITS_Dessertation/BITS-Final-Project/Resource
+==> db: Running provisioner: ansible...
+Vagrant has automatically selected the compatibility mode '2.0'
+according to the Ansible version installed (2.8.4).
+
+Alternatively, the compatibility mode can be specified in your Vagrantfile:
+https://www.vagrantup.com/docs/provisioning/ansible_common.html#compatibility_mode
+
+    db: Running ansible-playbook...
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [db]
+
+TASK [Ensure that mariaDB is installed] ****************************************
+[DEPRECATION WARNING]: Invoking "yum" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{ item }}"`, please use `name: ['mariadb-server', 
+'MySQL-python']` and remove the loop. This feature will be removed in version 
+2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+changed: [db] => (item=['mariadb-server', 'MySQL-python'])
+
+TASK [Ensure that mariaDB started and enabled] *********************************
+changed: [db]
+
+TASK [Set root pwd for MySQL] **************************************************
+changed: [db]
+
+TASK [upload .my.cnf file to save the credentials] *****************************
+An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+fatal: [db]: FAILED! => {"changed": false, "msg": "Could not find or access 'my.cnf'\nSearched in:\n\t/Users/hannish/Desktop/BITS_Dessertation/BITS-Final-Project/Resource/files/my.cnf\n\t/Users/hannish/Desktop/BITS_Dessertation/BITS-Final-Project/Resource/my.cnf\n\t/Users/hannish/Desktop/BITS_Dessertation/BITS-Final-Project/Resource/files/my.cnf\n\t/Users/hannish/Desktop/BITS_Dessertation/BITS-Final-Project/Resource/my.cnf on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+
+PLAY RECAP *********************************************************************
+db                         : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Ansible failed to complete successfully. Any error output should be
+visible above. Please fix these errors and try again.
+Ahameds-MacBook-Air:Resource hannish$ vagrant status
+Current machine states:
+
+client                    running (virtualbox)
+web                       running (virtualbox)
+webdev                    not created (virtualbox)
+db                        running (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:Resource hannish$ vagrant status
+Current machine states:
+
+client                    running (virtualbox)
+web                       running (virtualbox)
+webdev                    not created (virtualbox)
+db                        running (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:Resource hannish$ vagrant provision db
+==> db: Running provisioner: ansible...
+Vagrant has automatically selected the compatibility mode '2.0'
+according to the Ansible version installed (2.8.4).
+
+Alternatively, the compatibility mode can be specified in your Vagrantfile:
+https://www.vagrantup.com/docs/provisioning/ansible_common.html#compatibility_mode
+
+    db: Running ansible-playbook...
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [db]
+
+TASK [Ensure that mariaDB is installed] ****************************************
+[DEPRECATION WARNING]: Invoking "yum" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{ item }}"`, please use `name: ['mariadb-server', 
+'MySQL-python']` and remove the loop. This feature will be removed in version 
+2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+ok: [db] => (item=['mariadb-server', 'MySQL-python'])
+
+TASK [Ensure that mariaDB started and enabled] *********************************
+ok: [db]
+
+TASK [Set root pwd for MySQL] **************************************************
+fatal: [db]: FAILED! => {"changed": false, "msg": "unable to connect to database, check login_user and login_password are correct or /root/.my.cnf has the credentials. Exception message: (1045, \"Access denied for user 'root'@'localhost' (using password: NO)\")"}
+
+PLAY RECAP *********************************************************************
+db                         : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Ansible failed to complete successfully. Any error output should be
+visible above. Please fix these errors and try again.
+Ahameds-MacBook-Air:Resource hannish$ vagrant ssh db
+Last login: Tue Sep 10 17:55:54 2019 from 10.0.2.2
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ systemctl mysqld status
+Unknown operation 'mysqld'.
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ systemctl mysql status
+Unknown operation 'mysql'.
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ mysql
+mysql                       mysqlbug                    mysqld_safe                 mysql_find_rows             mysql_install_db            mysqlshow                   mysql_upgrade
+mysqlaccess                 mysqlcheck                  mysqld_safe_helper          mysql_fix_extensions        mysql_plugin                mysqlslap                   mysql_waitpid
+mysqladmin                  mysql_convert_table_format  mysqldump                   mysqlhotcopy                mysql_secure_installation   mysqltest                   mysql_zap
+mysqlbinlog                 mysqld_multi                mysqldumpslow               mysqlimport                 mysql_setpermission         mysql_tzinfo_to_sql         
+[vagrant@mysql ~]$ mysql
+mysql                       mysqlbug                    mysqld_safe                 mysql_find_rows             mysql_install_db            mysqlshow                   mysql_upgrade
+mysqlaccess                 mysqlcheck                  mysqld_safe_helper          mysql_fix_extensions        mysql_plugin                mysqlslap                   mysql_waitpid
+mysqladmin                  mysql_convert_table_format  mysqldump                   mysqlhotcopy                mysql_secure_installation   mysqltest                   mysql_zap
+mysqlbinlog                 mysqld_multi                mysqldumpslow               mysqlimport                 mysql_setpermission         mysql_tzinfo_to_sql         
+[vagrant@mysql ~]$ mysqladmin -uroot -p
+mysqladmin  Ver 9.0 Distrib 5.5.60-MariaDB, for Linux on x86_64
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Administration program for the mysqld daemon.
+Usage: mysqladmin [OPTIONS] command command....
+
+Default options are read from the following files in the given order:
+/etc/mysql/my.cnf /etc/my.cnf ~/.my.cnf 
+The following groups are read: mysqladmin client client-server client-mariadb
+The following options may be given as the first argument:
+--print-defaults          Print the program argument list and exit.
+--no-defaults             Don't read default options from any option file.
+The following specify which files/extra groups are read (specified before remaining options):
+--defaults-file=#         Only read default options from the given file #.
+--defaults-extra-file=#   Read this file after the global files are read.
+--defaults-group-suffix=# Additionally read default groups with # appended as a suffix.
+
+  -c, --count=#       Number of iterations to make. This works with -i
+                      (--sleep) only.
+  --debug-check       Check memory and open file usage at exit.
+  --debug-info        Print some debug info at exit.
+  -f, --force         Don't ask for confirmation on drop database; with
+                      multiple commands, continue even if an error occurs.
+  -C, --compress      Use compression in server/client protocol.
+  --character-sets-dir=name 
+                      Directory for character set files.
+  --default-character-set=name 
+                      Set the default character set.
+  -?, --help          Display this help and exit.
+  -h, --host=name     Connect to host.
+  -b, --no-beep       Turn off beep on error.
+  -p, --password[=name] 
+                      Password to use when connecting to server. If password is
+                      not given it's asked from the tty.
+  -P, --port=#        Port number to use for connection or 0 for default to, in
+                      order of preference, my.cnf, $MYSQL_TCP_PORT,
+                      /etc/services, built-in default (3306).
+  --protocol=name     The protocol to use for connection (tcp, socket, pipe,
+                      memory).
+  -r, --relative      Show difference between current and previous values when
+                      used with -i. Currently only works with extended-status.
+  -s, --silent        Silently exit if one can't connect to server.
+  -S, --socket=name   The socket file to use for connection.
+  -i, --sleep=#       Execute commands repeatedly with a sleep between.
+  --ssl               Enable SSL for connection (automatically enabled with
+                      other flags).
+  --ssl-ca=name       CA file in PEM format (check OpenSSL docs, implies
+                      --ssl).
+  --ssl-capath=name   CA directory (check OpenSSL docs, implies --ssl).
+  --ssl-cert=name     X509 cert in PEM format (implies --ssl).
+  --ssl-cipher=name   SSL cipher to use (implies --ssl).
+  --ssl-key=name      X509 key in PEM format (implies --ssl).
+  --ssl-verify-server-cert 
+                      Verify server's "Common Name" in its cert against
+                      hostname used when connecting. This option is disabled by
+                      default.
+  -u, --user=name     User for login if not current user.
+  -v, --verbose       Write more information.
+  -V, --version       Output version information and exit.
+  -E, --vertical      Print output vertically. Is similar to --relative, but
+                      prints output vertically.
+  -w, --wait[=#]      Wait and retry if connection is down.
+  --connect-timeout=# 
+  --shutdown-timeout=# 
+  --plugin-dir=name   Directory for client-side plugins.
+  --default-auth=name Default authentication client-side plugin to use.
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}  Value (after reading options)
+--------------------------------- ----------------------------------------
+count                             0
+debug-check                       FALSE
+debug-info                        FALSE
+force                             FALSE
+compress                          FALSE
+character-sets-dir                (No default value)
+default-character-set             auto
+host                              (No default value)
+no-beep                           FALSE
+port                              0
+relative                          FALSE
+socket                            (No default value)
+sleep                             0
+ssl                               FALSE
+ssl-ca                            (No default value)
+ssl-capath                        (No default value)
+ssl-cert                          (No default value)
+ssl-cipher                        (No default value)
+ssl-key                           (No default value)
+ssl-verify-server-cert            FALSE
+user                              root
+verbose                           FALSE
+vertical                          FALSE
+connect-timeout                   43200
+shutdown-timeout                  3600
+plugin-dir                        (No default value)
+default-auth                      (No default value)
+
+Where command is a one or more of: (Commands may be shortened)
+  create databasename	  Create a new database
+  debug			  Instruct server to write debug information to log
+  drop databasename	  Delete a database and all its tables
+  extended-status         Gives an extended status message from the server
+  flush-all-statistics    Flush all statistics tables
+  flush-all-status        Flush status and statistics
+  flush-client-statistics Flush client statistics
+  flush-hosts             Flush all cached hosts
+  flush-index-statistics  Flush index statistics
+  flush-logs              Flush all logs
+  flush-privileges        Reload grant tables (same as reload)
+  flush-slow-log          Flush slow query log
+  flush-status		  Clear status variables
+  flush-table-statistics  Clear table statistics
+  flush-tables            Flush all tables
+  flush-threads           Flush the thread cache
+  flush-user-statistics   Flush user statistics
+  kill id,id,...	Kill mysql threads
+  password [new-password] Change old password to new-password in current format
+  old-password [new-password] Change old password to new-password in old format
+  ping			Check if mysqld is alive
+  processlist		Show list of active threads in server
+  reload		Reload grant tables
+  refresh		Flush all tables and close and open logfiles
+  shutdown		Take server down
+  status		Gives a short status message from the server
+  start-slave		Start slave
+  stop-slave		Stop slave
+  variables             Prints variables available
+  version		Get version info from server
+[vagrant@mysql ~]$ cat /etc/mysql/my.cnf
+cat: /etc/mysql/my.cnf: No such file or directory
+[vagrant@mysql ~]$ cd /tmp/
+[vagrant@mysql tmp]$ ls
+systemd-private-89df1d27d266444cba40218e147d0003-mariadb.service-lBdV49
+[vagrant@mysql tmp]$ cd
+[vagrant@mysql ~]$ ls -lrt
+total 0
+[vagrant@mysql ~]$ ls cd /
+ls: cannot access cd: No such file or directory
+/:
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  vagrant  var
+[vagrant@mysql ~]$ ls -la
+total 16
+drwx------. 4 vagrant vagrant 111 Sep 10 17:47 .
+drwxr-xr-x. 3 root    root     21 Aug 23  2017 ..
+drwx------. 3 vagrant vagrant  17 Sep 10 17:47 .ansible
+-rw-r--r--. 1 vagrant vagrant  18 Aug  2  2016 .bash_logout
+-rw-r--r--. 1 vagrant vagrant 193 Aug  2  2016 .bash_profile
+-rw-r--r--. 1 vagrant vagrant 231 Aug  2  2016 .bashrc
+drwx------. 2 vagrant root     29 Sep 10 17:47 .ssh
+-rw-r--r--. 1 vagrant vagrant   6 Aug 23  2017 .vbox_version
+[vagrant@mysql ~]$ ls -la
+total 16
+drwx------. 4 vagrant vagrant 111 Sep 10 17:47 .
+drwxr-xr-x. 3 root    root     21 Aug 23  2017 ..
+drwx------. 3 vagrant vagrant  17 Sep 10 17:47 .ansible
+-rw-r--r--. 1 vagrant vagrant  18 Aug  2  2016 .bash_logout
+-rw-r--r--. 1 vagrant vagrant 193 Aug  2  2016 .bash_profile
+-rw-r--r--. 1 vagrant vagrant 231 Aug  2  2016 .bashrc
+drwx------. 2 vagrant root     29 Sep 10 17:47 .ssh
+-rw-r--r--. 1 vagrant vagrant   6 Aug 23  2017 .vbox_version
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ ls -lrt ~/.my.cnf 
+ls: cannot access /home/vagrant/.my.cnf: No such file or directory
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ sudo su
+[root@mysql vagrant]# ls -la
+total 16
+drwx------. 4 vagrant vagrant 111 Sep 10 17:47 .
+drwxr-xr-x. 3 root    root     21 Aug 23  2017 ..
+drwx------. 3 vagrant vagrant  17 Sep 10 17:47 .ansible
+-rw-r--r--. 1 vagrant vagrant  18 Aug  2  2016 .bash_logout
+-rw-r--r--. 1 vagrant vagrant 193 Aug  2  2016 .bash_profile
+-rw-r--r--. 1 vagrant vagrant 231 Aug  2  2016 .bashrc
+drwx------. 2 vagrant root     29 Sep 10 17:47 .ssh
+-rw-r--r--. 1 vagrant vagrant   6 Aug 23  2017 .vbox_version
+[root@mysql vagrant]# cd
+[root@mysql ~]# ls -la
+total 28
+dr-xr-x---.  2 root root  137 Aug 23  2017 .
+dr-xr-xr-x. 18 root root  239 Sep 10 17:47 ..
+-rw-r--r--.  1 root root   18 Dec 29  2013 .bash_logout
+-rw-r--r--.  1 root root  176 Dec 29  2013 .bash_profile
+-rw-r--r--.  1 root root  176 Dec 29  2013 .bashrc
+-rw-r--r--.  1 root root  100 Dec 29  2013 .cshrc
+-rw-r--r--.  1 root root  129 Dec 29  2013 .tcshrc
+-rw-------.  1 root root 2352 Aug 23  2017 anaconda-ks.cfg
+-rw-------.  1 root root 1677 Aug 23  2017 original-ks.cfg
+[root@mysql ~]# cd
+[root@mysql ~]# ls -la
+total 28
+dr-xr-x---.  2 root root  137 Aug 23  2017 .
+dr-xr-xr-x. 18 root root  239 Sep 10 17:47 ..
+-rw-r--r--.  1 root root   18 Dec 29  2013 .bash_logout
+-rw-r--r--.  1 root root  176 Dec 29  2013 .bash_profile
+-rw-r--r--.  1 root root  176 Dec 29  2013 .bashrc
+-rw-r--r--.  1 root root  100 Dec 29  2013 .cshrc
+-rw-r--r--.  1 root root  129 Dec 29  2013 .tcshrc
+-rw-------.  1 root root 2352 Aug 23  2017 anaconda-ks.cfg
+-rw-------.  1 root root 1677 Aug 23  2017 original-ks.cfg
+[root@mysql ~]# 
+[root@mysql ~]# 
+[root@mysql ~]# 
+[root@mysql ~]# exit
+exit
+[vagrant@mysql ~]$ exir
+-bash: exir: command not found
+[vagrant@mysql ~]$ exit
+logout
+Connection to 127.0.0.1 closed.
+Ahameds-MacBook-Air:Resource hannish$ vagrant status
+Current machine states:
+
+client                    running (virtualbox)
+web                       running (virtualbox)
+webdev                    not created (virtualbox)
+db                        running (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:Resource hannish$ vagrant provision db
+==> db: Running provisioner: ansible...
+Vagrant has automatically selected the compatibility mode '2.0'
+according to the Ansible version installed (2.8.4).
+
+Alternatively, the compatibility mode can be specified in your Vagrantfile:
+https://www.vagrantup.com/docs/provisioning/ansible_common.html#compatibility_mode
+
+    db: Running ansible-playbook...
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [db]
+
+TASK [Ensure that mariaDB is installed] ****************************************
+[DEPRECATION WARNING]: Invoking "yum" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{ item }}"`, please use `name: ['mariadb-server', 
+'MySQL-python']` and remove the loop. This feature will be removed in version 
+2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+ok: [db] => (item=['mariadb-server', 'MySQL-python'])
+
+TASK [Ensure that mariaDB started and enabled] *********************************
+ok: [db]
+
+TASK [Set root pwd for MySQL] **************************************************
+fatal: [db]: FAILED! => {"changed": false, "msg": "unable to connect to database, check login_user and login_password are correct or /root/.my.cnf has the credentials. Exception message: (1045, \"Access denied for user 'root'@'localhost' (using password: NO)\")"}
+
+PLAY RECAP *********************************************************************
+db                         : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Ansible failed to complete successfully. Any error output should be
+visible above. Please fix these errors and try again.
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ vagrant ssh db
+Last login: Tue Sep 10 18:09:29 2019 from 10.0.2.2
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+[vagrant@mysql ~]$ sudo su
+[root@mysql vagrant]# cd
+[root@mysql ~]# vi .my.cnf
+[root@mysql ~]# ls -lrt .my.cnf 
+-rw-r--r--. 1 root root 34 Sep 10 18:10 .my.cnf
+[root@mysql ~]# 
+[root@mysql ~]# 
+[root@mysql ~]# exit
+exit
+[vagrant@mysql ~]$ exit
+logout
+Connection to 127.0.0.1 closed.
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ cp database.yml database.yml.org
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ 
+Ahameds-MacBook-Air:Resource hannish$ vagrant provision db
+==> db: Running provisioner: ansible...
+Vagrant has automatically selected the compatibility mode '2.0'
+according to the Ansible version installed (2.8.4).
+
+Alternatively, the compatibility mode can be specified in your Vagrantfile:
+https://www.vagrantup.com/docs/provisioning/ansible_common.html#compatibility_mode
+
+    db: Running ansible-playbook...
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [db]
+
+TASK [Ensure that mariaDB is installed] ****************************************
+[DEPRECATION WARNING]: Invoking "yum" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{ item }}"`, please use `name: ['mariadb-server', 
+'MySQL-python']` and remove the loop. This feature will be removed in version 
+2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+ok: [db] => (item=['mariadb-server', 'MySQL-python'])
+
+TASK [Ensure that mariaDB started and enabled] *********************************
+ok: [db]
+
+TASK [Set root pwd for MySQL] **************************************************
+ok: [db]
+
+TASK [Remove anonymous account] ************************************************
+changed: [db]
+
+TASK [create application database] *********************************************
+changed: [db]
+
+TASK [create an application user] **********************************************
+changed: [db]
+
+TASK [upload bookings.sql] *****************************************************
+changed: [db]
+
+TASK [Import bookings.sql] *****************************************************
+fatal: [db]: FAILED! => {"changed": false, "msg": "ERROR 1046 (3D000) at line 1: No database selected\n"}
+
+PLAY RECAP *********************************************************************
+db                         : ok=8    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Ansible failed to complete successfully. Any error output should be
+visible above. Please fix these errors and try again.
+Ahameds-MacBook-Air:Resource hannish$ vagrant provision db
+==> db: Running provisioner: ansible...
+Vagrant has automatically selected the compatibility mode '2.0'
+according to the Ansible version installed (2.8.4).
+
+Alternatively, the compatibility mode can be specified in your Vagrantfile:
+https://www.vagrantup.com/docs/provisioning/ansible_common.html#compatibility_mode
+
+    db: Running ansible-playbook...
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [db]
+
+TASK [Ensure that mariaDB is installed] ****************************************
+[DEPRECATION WARNING]: Invoking "yum" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{ item }}"`, please use `name: ['mariadb-server', 
+'MySQL-python']` and remove the loop. This feature will be removed in version 
+2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+ok: [db] => (item=['mariadb-server', 'MySQL-python'])
+
+TASK [Ensure that mariaDB started and enabled] *********************************
+ok: [db]
+
+TASK [Set root pwd for MySQL] **************************************************
+ok: [db]
+
+TASK [Remove anonymous account] ************************************************
+ok: [db]
+
+TASK [create application database] *********************************************
+ok: [db]
+
+TASK [create an application user] **********************************************
+ok: [db]
+
+TASK [upload bookings.sql] *****************************************************
+ok: [db]
+
+TASK [Import bookings.sql] *****************************************************
+changed: [db]
+
+PLAY RECAP *********************************************************************
+db                         : ok=9    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Ahameds-MacBook-Air:Resource hannish$ vagrant ssh db
+Last login: Tue Sep 10 18:16:19 2019 from 10.0.2.2
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ 
+[vagrant@mysql ~]$ mysqladmin -u root -p
+mysqladmin  Ver 9.0 Distrib 5.5.60-MariaDB, for Linux on x86_64
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Administration program for the mysqld daemon.
+Usage: mysqladmin [OPTIONS] command command....
+
+Default options are read from the following files in the given order:
+/etc/mysql/my.cnf /etc/my.cnf ~/.my.cnf 
+The following groups are read: mysqladmin client client-server client-mariadb
+The following options may be given as the first argument:
+--print-defaults          Print the program argument list and exit.
+--no-defaults             Don't read default options from any option file.
+The following specify which files/extra groups are read (specified before remaining options):
+--defaults-file=#         Only read default options from the given file #.
+--defaults-extra-file=#   Read this file after the global files are read.
+--defaults-group-suffix=# Additionally read default groups with # appended as a suffix.
+
+  -c, --count=#       Number of iterations to make. This works with -i
+                      (--sleep) only.
+  --debug-check       Check memory and open file usage at exit.
+  --debug-info        Print some debug info at exit.
+  -f, --force         Don't ask for confirmation on drop database; with
+                      multiple commands, continue even if an error occurs.
+  -C, --compress      Use compression in server/client protocol.
+  --character-sets-dir=name 
+                      Directory for character set files.
+  --default-character-set=name 
+                      Set the default character set.
+  -?, --help          Display this help and exit.
+  -h, --host=name     Connect to host.
+  -b, --no-beep       Turn off beep on error.
+  -p, --password[=name] 
+                      Password to use when connecting to server. If password is
+                      not given it's asked from the tty.
+  -P, --port=#        Port number to use for connection or 0 for default to, in
+                      order of preference, my.cnf, $MYSQL_TCP_PORT,
+                      /etc/services, built-in default (3306).
+  --protocol=name     The protocol to use for connection (tcp, socket, pipe,
+                      memory).
+  -r, --relative      Show difference between current and previous values when
+                      used with -i. Currently only works with extended-status.
+  -s, --silent        Silently exit if one can't connect to server.
+  -S, --socket=name   The socket file to use for connection.
+  -i, --sleep=#       Execute commands repeatedly with a sleep between.
+  --ssl               Enable SSL for connection (automatically enabled with
+                      other flags).
+  --ssl-ca=name       CA file in PEM format (check OpenSSL docs, implies
+                      --ssl).
+  --ssl-capath=name   CA directory (check OpenSSL docs, implies --ssl).
+  --ssl-cert=name     X509 cert in PEM format (implies --ssl).
+  --ssl-cipher=name   SSL cipher to use (implies --ssl).
+  --ssl-key=name      X509 key in PEM format (implies --ssl).
+  --ssl-verify-server-cert 
+                      Verify server's "Common Name" in its cert against
+                      hostname used when connecting. This option is disabled by
+                      default.
+  -u, --user=name     User for login if not current user.
+  -v, --verbose       Write more information.
+  -V, --version       Output version information and exit.
+  -E, --vertical      Print output vertically. Is similar to --relative, but
+                      prints output vertically.
+  -w, --wait[=#]      Wait and retry if connection is down.
+  --connect-timeout=# 
+  --shutdown-timeout=# 
+  --plugin-dir=name   Directory for client-side plugins.
+  --default-auth=name Default authentication client-side plugin to use.
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}  Value (after reading options)
+--------------------------------- ----------------------------------------
+count                             0
+debug-check                       FALSE
+debug-info                        FALSE
+force                             FALSE
+compress                          FALSE
+character-sets-dir                (No default value)
+default-character-set             auto
+host                              (No default value)
+no-beep                           FALSE
+port                              0
+relative                          FALSE
+socket                            (No default value)
+sleep                             0
+ssl                               FALSE
+ssl-ca                            (No default value)
+ssl-capath                        (No default value)
+ssl-cert                          (No default value)
+ssl-cipher                        (No default value)
+ssl-key                           (No default value)
+ssl-verify-server-cert            FALSE
+user                              root
+verbose                           FALSE
+vertical                          FALSE
+connect-timeout                   43200
+shutdown-timeout                  3600
+plugin-dir                        (No default value)
+default-auth                      (No default value)
+
+Where command is a one or more of: (Commands may be shortened)
+  create databasename	  Create a new database
+  debug			  Instruct server to write debug information to log
+  drop databasename	  Delete a database and all its tables
+  extended-status         Gives an extended status message from the server
+  flush-all-statistics    Flush all statistics tables
+  flush-all-status        Flush status and statistics
+  flush-client-statistics Flush client statistics
+  flush-hosts             Flush all cached hosts
+  flush-index-statistics  Flush index statistics
+  flush-logs              Flush all logs
+  flush-privileges        Reload grant tables (same as reload)
+  flush-slow-log          Flush slow query log
+  flush-status		  Clear status variables
+  flush-table-statistics  Clear table statistics
+  flush-tables            Flush all tables
+  flush-threads           Flush the thread cache
+  flush-user-statistics   Flush user statistics
+  kill id,id,...	Kill mysql threads
+  password [new-password] Change old password to new-password in current format
+  old-password [new-password] Change old password to new-password in old format
+  ping			Check if mysqld is alive
+  processlist		Show list of active threads in server
+  reload		Reload grant tables
+  refresh		Flush all tables and close and open logfiles
+  shutdown		Take server down
+  status		Gives a short status message from the server
+  start-slave		Start slave
+  stop-slave		Stop slave
+  variables             Prints variables available
+  version		Get version info from server
+[vagrant@mysql ~]$ mysql -u root -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 17
+Server version: 5.5.60-MariaDB MariaDB Server
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> 
+MariaDB [(none)]> 
+MariaDB [(none)]> select * from ci_database;
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]> 
+MariaDB [(none)]> 
+MariaDB [(none)]> use ci_database;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [ci_database]> 
+MariaDB [ci_database]> 
+MariaDB [ci_database]> select * from bookings;
+Empty set (0.00 sec)
+
+MariaDB [ci_database]> 
+MariaDB [ci_database]> 
+MariaDB [ci_database]> exit
+Bye
+[vagrant@mysql ~]$ mysql -u root -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 18
+Server version: 5.5.60-MariaDB MariaDB Server
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> databases;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'databases' at line 1
+MariaDB [(none)]> 
+MariaDB [(none)]> 
+MariaDB [(none)]> 
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| ci_database        |
+| mysql              |
+| performance_schema |
+| test               |
++--------------------+
+5 rows in set (0.00 sec)
+
+MariaDB [(none)]> 
+MariaDB [(none)]> 
+MariaDB [(none)]> use ci_database;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [ci_database]> 
+MariaDB [ci_database]> 
+MariaDB [ci_database]> show tables;
++-----------------------+
+| Tables_in_ci_database |
++-----------------------+
+| bookings              |
++-----------------------+
+1 row in set (0.00 sec)
+
+MariaDB [ci_database]> 
+MariaDB [ci_database]> select * from bookings;
+Empty set (0.00 sec)
+
+MariaDB [ci_database]> 
+MariaDB [ci_database]> 
+MariaDB [ci_database]> 
+MariaDB [ci_database]> select * from bookings;
++----+------+---------------------+------------+------------+
+| id | name | email               | passengers | departure  |
++----+------+---------------------+------------+------------+
+|  1 | NULL | hannish04@gmail.com | 1          | 2019-09-18 |
++----+------+---------------------+------------+------------+
+1 row in set (0.00 sec)
+
+MariaDB [ci_database]> 
+MariaDB [ci_database]> 
+MariaDB [ci_database]> select * from bookings;
++----+------+----------------------+------------+------------+
+| id | name | email                | passengers | departure  |
++----+------+----------------------+------------+------------+
+|  1 | NULL | hannish04@gmail.com  | 1          | 2019-09-18 |
+|  2 | NULL | thaslimhannish786@gm | 1          | 2019-09-20 |
++----+------+----------------------+------------+------------+
+2 rows in set (0.00 sec)
+
+MariaDB [ci_database]> select * from bookings;
++----+------+----------------------+------------+------------+
+| id | name | email                | passengers | departure  |
++----+------+----------------------+------------+------------+
+|  1 | NULL | hannish04@gmail.com  | 1          | 2019-09-18 |
+|  2 | NULL | thaslimhannish786@gm | 1          | 2019-09-20 |
+|  3 | NULL | ahamedjasim@gmail.co | 1          | 2019-09-23 |
++----+------+----------------------+------------+------------+
+3 rows in set (0.00 sec)
+
+MariaDB [ci_database]> exit
+Bye
+[vagrant@mysql ~]$ exit
+logout
+Connection to 127.0.0.1 closed.
+Ahameds-MacBook-Air:Resource hannish$ vagrant ssh client
+Last login: Tue Sep 10 17:41:21 2019 from 10.0.2.2
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+[vagrant@client ~]$ ls
+[vagrant@client ~]$ 
+[vagrant@client ~]$ 
+[vagrant@client ~]$ 
+[vagrant@client ~]$ 
+[vagrant@client ~]$ git Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
+Ahameds-MacBook-Air:Resource hannish$ vagrant ssh client
+VM must be running to open SSH connection. Run `vagrant up`
+to start the virtual machine.
+Ahameds-MacBook-Air:Resource hannish$ vagrant status
+Current machine states:
+
+client                    saved (virtualbox)
+web                       saved (virtualbox)
+webdev                    not created (virtualbox)
+db                        saved (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:Resource hannish$ vagrant status
+Current machine states:
+
+client                    saved (virtualbox)
+web                       saved (virtualbox)
+webdev                    not created (virtualbox)
+db                        saved (virtualbox)
+jenkins                   not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+Ahameds-MacBook-Air:Resource hannish$ 

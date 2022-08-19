@@ -1,0 +1,35 @@
+- hosts: jenkins-box
+  become: yes
+  tasks:
+  - name: Install the repo key 
+    apt_key:
+      url: https://pkg.jenkins.io/debian/jenkins-ci.org.key
+      state: present
+  - name: Update and upgrade apt packages
+    become: true
+    apt:
+      upgrade: yes
+      update_cache: yes    
+  - name: Add Jenkins repository
+    apt_repository:
+      repo: 'deb http://pkg.jenkins.io/debian-stable binary/'
+      state: present
+  - name: Install Jenkins 
+    apt:
+      name: jenkins
+      state: present 
+      update_cache: yes
+  - name: Start and enable the service 
+    service:
+        name=jenkins state=started enabled=yes
+  - name: Install a list of packages
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+      - python-pip
+      - git
+      - phpunit     
+  - name: Install Selenium testing framework 
+    pip:
+      name: selenium
